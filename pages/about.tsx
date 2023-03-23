@@ -2,6 +2,7 @@ import MainLayout from "../components/MainLayout";
 import SidebarLeft from "../components/desktop/SidebarLeft";
 import SidebarRight from "../components/desktop/SidebarRight";
 import Dogesound from "../components/desktop/dogesound";
+
 const AboutPage = () => {
   return (
     <MainLayout>
