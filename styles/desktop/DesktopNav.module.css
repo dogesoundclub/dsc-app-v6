@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: calc(100vh * (100 / 930));
+  }
+  
+  .navLogo {
+    width: 50vw;
+    height: auto;
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .navItem {
+    cursor: pointer;
+  }
+  
+  .navLink {
+    display: inline-flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .navLink:hover {
+    color: #666;
+  }
