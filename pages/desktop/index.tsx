@@ -5,7 +5,7 @@ const DesktopHome = () => {
   return (
     <div>
       <DesktopNav />
-      <main>Welcome to Desktop version of Doge Sound Club!</main>
+        <main>Welcome to Desktop version of Doge Sound Club!</main>
     </div>
   );
 };

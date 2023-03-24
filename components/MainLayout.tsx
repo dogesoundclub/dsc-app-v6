@@ -1,11 +1,26 @@
-import React from "react";
+// import React from "react";
 import DesktopNav from "./desktop/DesktopNav";
 
-interface MainLayoutProps {
-  children: React.ReactNode;
-}
+// interface MainLayoutProps {
+//   children: React.ReactNode;
+// }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+// const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+//   return (
+//     <>
+//       <DesktopNav />
+//       {children}
+//     </>
+//   );
+// };
+
+// export default MainLayout;
+type LayoutProps = {
+  user?: any
+  loading?: boolean
+  children: React.ReactNode
+}
+const MainLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <DesktopNav />
@@ -13,5 +28,4 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     </>
   );
 };
-
 export default MainLayout;

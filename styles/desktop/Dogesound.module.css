@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mix {
+    background: url('/banner2.png');
+    background-size: contain;
+}
+
+
+.animated {
+    color: #fff;
+    border: 10px solid #F7D701;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    background: url('/background.jpeg');
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.animated .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+    font-family: 'NeoDunggeunmo';
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(90%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
