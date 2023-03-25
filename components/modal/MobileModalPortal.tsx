@@ -5,9 +5,9 @@ import Modal from '@mui/material/Modal';
 const style = {
   position: 'absolute' as 'absolute',
   top: '50%',
-  left: '30%',
+  left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 300,
 };
 
 export default function BasicModal() {
@@ -27,11 +27,11 @@ export default function BasicModal() {
       >
         <Box sx={style}>
           {/* <Button onClick={handleClose}>X</Button> */}
-          <div style={{background: "#00000080", fontSize: "25px", padding: "5px", display: "flex", justifyContent: "space-between", alignItems: "center"}}>
+          <div style={{background: "#00000080", fontSize: "15px", padding: "3px", textAlign: "center"}}>
             <span>Saturday Live Gaesori</span>
             <a onClick={handleClose} style={{color: "white"}}>X</a>
           </div>
-          <img src="/poster.png" style={{width: "400px"}}/>
+          <img src="/poster.png" style={{width: "100%"}}/>
         </Box>
       </Modal>
     </div>

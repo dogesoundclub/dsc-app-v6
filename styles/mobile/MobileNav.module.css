@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+}
+
+.ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+}
+
+.li{
+    padding: 5px;
+    list-style: none;
+    background: #F7D701;
+    background: linear-gradient( to bottom, #F7D701 30%, #ffffff 50%, #F7D701 70%);
+    border-radius: 3px;
+    border: 1px solid #000000;
+}
+
+.link {
+    color: #ffffff;
+    text-shadow: -1px 1px black, 1px 1px black, 1px 1px black, 1px -1px black;
+}
+
+.link:hover {
+    text-shadow: 3px -1px 1px black, 1px 1px black, 1px 1px black, 1px -1px black;
+  }
