@@ -5,6 +5,7 @@ import styles from '@/styles/desktop/Ready.module.css';
 import { Abel, Yantramanav } from 'next/font/google'
 import React, {useState, useEffect} from 'react';
 import MobileReady from './mobile/ready';
+import Link from 'next/link';
 
 const abel = Abel({ 
   weight: '400',
@@ -35,9 +36,9 @@ const ReadyPage = () => {
                 If you want to know more about us, follow us until we’re ready.<br/>
                 We will get back ASAP!<br/>
             </span>
-            <button className={styles.button}><a href="https://twitter.com/dogesoundclub">Our Twitter</a></button>
-            <button className={styles.button}><a href="https://discord.gg/dogesoundclub">Our Discord</a></button>
-            <button className={styles.button}><a href="/">Back to home</a></button>
+            <button className={styles.button}><Link href="https://twitter.com/dogesoundclub">Our Twitter</Link></button>
+            <button className={styles.button}><Link href="https://discord.gg/dogesoundclub">Our Discord</Link></button>
+            <button className={styles.button}><Link href="/">Back to home</Link></button>
             <br></br>
             <img src="/construction.png" style={{width: "500px"}}/>
           </div>

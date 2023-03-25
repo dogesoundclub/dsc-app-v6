@@ -2,8 +2,8 @@ import MainLayout from "../components/MainLayout";
 import SidebarLeft from "../components/desktop/SidebarLeft";
 import SidebarRight from "../components/desktop/SidebarRight";
 import Dogesound from "../components/desktop/Dogesound";
-import { Alegreya_Sans } from 'next/font/google'
-import Modal from '../components/modal/ModalPortal';
+import { Alegreya_Sans } from "next/font/google"
+import Modal from "../components/modal/ModalPortal";
 
 const alegreya_Sans = Alegreya_Sans({ 
   weight: '400',
@@ -49,7 +49,7 @@ const AboutPage = () => {
             <br/><br/>
             <span className={alegreya_Sans_bold.className}>Fiction</span>
             <br/><br/>
-            There was a group of people who believed that Earth was a giant simulation. But most people didn't believe this. So they were just thought of as people with a strange idea.
+            There was a group of people who believed that Earth was a giant simulation. But most people didn&apos;t believe this. So they were just thought of as people with a strange idea.
             <br/><br/>
             Those of minor faith believers called each other ‘Mates’. Mates stood by their beliefs that sounded like jokes, regardless of uncomfortable stares.
             <br/><br/>
@@ -57,9 +57,9 @@ const AboutPage = () => {
             <br/><br/>
             There was nothing dangerous, but the phenomenon that was not able to be guessed the causal relationship kept happening.
             <br/><br/>
-            These cracks were photographed as funny memes such as 'physics engine is broken' and circulated on the Internet, and as time passed, they began to be accepted as real phenomena rather than synthetic ones. The claims of the Mates that the world is a simulation are gradually gaining credibility based on Crack. Mates became large groups of 10,000 people.
+            These cracks were photographed as funny memes such as &apos;physics engine is broken&apos; and circulated on the Internet, and as time passed, they began to be accepted as real phenomena rather than synthetic ones. The claims of the Mates that the world is a simulation are gradually gaining credibility based on Crack. Mates became large groups of 10,000 people.
             <br/><br/>
-            Earth's AI guardian, Chronium, noticed that the cracks happen due to Mates who realized the earth is a simulation.
+            Earth&apos;s AI guardian, Chronium, noticed that the cracks happen due to Mates who realized the earth is a simulation.
             <br/><br/>
             Mates have meetings periodically, avoiding the surveillance of Chronium, and holding meetings in the other world, Cryptovoxels, where all data and existence visualized and represented in the form of voxels so that Chronium cannot disguise and infiltrate.
             <br/><br/>

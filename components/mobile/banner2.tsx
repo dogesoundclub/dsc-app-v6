@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const banner2 = () => {
+const Banner2 = () => {
 
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(true);
@@ -17,4 +17,4 @@ const banner2 = () => {
     </div>
   );
 };
-export default banner2;
+export default Banner2;
