@@ -37,37 +37,36 @@ const AboutPage = () => {
           <div style={{overflow:"scroll", height: "60vh", padding: "20px"}}>
             <div className={alegreya_Sans.className} style={{fontSize: "24px"}}>
             <br/>
-            Doge Sound Club (DSC) is a collaboratable fiction based on the initial settings like the world we live is a giant simulation and like ordinary nonsencial jokes among people can make bugs and the result, break the world and make you free.
+            Welcome to the Doge Sound Club (DSC), a friendly community that embraces creativity and collaboration through the use of generative Non-Fungible Tokens (NFTs) and an open-license approach.
             <br/><br/>
-            DSC is also used as the name of our club. DSC is a community where anybody can be a creator and can contribute in worldview for next generation by writing, drawing or coding.
+            Doge Sound Club is centered around the concept of "Doge Sound," which playfully refers to nonsensical jokes and sayings, known as "Gaesori" in Korean. The term "Doge Sound" derives from the Korean words "Gae" (meaning dog) and "Sori" (meaning sound), signifying lighthearted, entertaining conversations.
             <br/><br/>
-            We are using Git to do this type of collaboration. 
+            Our project started in July 2021 with the launch of Korea's first generative NFTs called Doge Sound Club Mates. These unique digital collectibles form the basis for our membership activities and foster a sense of belonging within the community.
             <br/><br/>
-            <span className={alegreya_Sans_bold.className}>Why write the fiction using Git?</span>
+            DSC is committed to fostering a creative environment where everyone can contribute, regardless of their background or skill set. We believe in the importance of an open-license approach, ensuring that our stories and content are available for anyone to use and build upon without restrictions.
             <br/><br/>
-            We hoped that our fiction would be continuously redeveloped regardless of the existence of the team, like a legend, hoped this fiction eternally live and grow.
+            To support our open-license philosophy, all DSC content follows the Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0) license, unless otherwise stated. 
             <br/><br/>
-            <span className={alegreya_Sans_bold.className}>Fiction</span>
+            Our community members are encouraged to create and share their work using a variety of mediums, such as writing, drawing, or coding. To facilitate this collaborative process, we use Git, a version control system that allows for seamless cooperation and the continuous development of our collective stories.
             <br/><br/>
-            There was a group of people who believed that Earth was a giant simulation. But most people didn&apos;t believe this. So they were just thought of as people with a strange idea.
+
+            <span className={alegreya_Sans_bold.className} style={{ fontSize: "3rem" }}>TOY DAPP</span>
             <br/><br/>
-            Those of minor faith believers called each other ‘Mates’. Mates stood by their beliefs that sounded like jokes, regardless of uncomfortable stares.
+            At Doge Sound Club (DSC), we also develop Toy Decentralized Applications (Toy DApps) to make blockchain technology more accessible and enjoyable for everyone, regardless of their knowledge about the blockchain. These playful dApps may not have specific utility, but they provide a fun, engaging experience for users.
             <br/><br/>
-            From one day, discontinuous points, called cracks, appeared all over the earth. If you put one hand through the mailbox opening of one of crack points, the same hand will come out of the school locker on the other side of the world.
+            One of our popular Toy DApps is the Doge Sound Contest. This competition combines blockchain technology with a Discord bot to host a monthly contest where participants submit their best "Doge Sound" entries. Doge Sound refers to nonsensical jokes and sayings, known as "Gaesori" in Korean. DSC community members vote for the most illogical and unpredictable submissions to select a winner.
             <br/><br/>
-            There was nothing dangerous, but the phenomenon that was not able to be guessed the causal relationship kept happening.
+            The winning Doge Sound is then showcased on the main page of our website. Winners also have the opportunity to mint their Doge Sound as an NFT by clicking a button connected to the smart contract.
             <br/><br/>
-            These cracks were photographed as funny memes such as &apos;physics engine is broken&apos; and circulated on the Internet, and as time passed, they began to be accepted as real phenomena rather than synthetic ones. The claims of the Mates that the world is a simulation are gradually gaining credibility based on Crack. Mates became large groups of 10,000 people.
+            The idea behind hosting this unique contest is rooted in our project's fiction. The DSC community believes that the world is a simulation, and that inconsistent or unpredictable sayings and actions often cause bugs in the simulation. These bugs serve as clues that the world is a simulation. To encourage the discovery and exploration of these bugs, we've been running the Doge Sound Contest on the Klaytn blockchain since 2021.
             <br/><br/>
-            Earth&apos;s AI guardian, Chronium, noticed that the cracks happen due to Mates who realized the earth is a simulation.
+            By developing and promoting Toy DApps like the Doge Sound Contest, DSC aims to create a fun and inclusive environment for users to engage with blockchain technology, fostering curiosity and creativity within our community.
             <br/><br/>
-            Mates have meetings periodically, avoiding the surveillance of Chronium, and holding meetings in the other world, Cryptovoxels, where all data and existence visualized and represented in the form of voxels so that Chronium cannot disguise and infiltrate.
+            <span className={alegreya_Sans_bold.className} style={{ fontSize: "3rem" }}>MISSION</span>
             <br/><br/>
-            (…)
+            Our ultimate mission at Doge Sound Club is to create a world where everyone can be a creator, unrestricted by licensing barriers or other limitations. We aim to make it easy for ordinary people to express their creativity and contribute to a shared universe of stories and experiences.
             <br/><br/>
-            For more episodes...
-            <br/>
-            <a href="https://github.com/dogesoundclub"><span style={{textDecoration: "underline"}}>Go to the repo.</span></a> (Github)
+            To learn more about the Doge Sound Club, our team, and our various NFT offerings, please visit our website and join our vibrant community.
             </div>
           </div>
         </div>
