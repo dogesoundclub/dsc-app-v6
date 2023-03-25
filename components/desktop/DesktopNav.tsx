@@ -24,7 +24,7 @@ const DesktopNav = () => {
           <Link href='/about'><img src="/dogesoundclub.png" style={{height: "100px"}}/></Link>
         <ul className={styles.ul}>
           {navigation.map((item) => (
-          <li className={styles.li}><Link href={item.href} className={styles.link}>{item.name}</Link>
+          <li key={item.name} className={styles.li}><Link href={item.href} className={styles.link}>{item.name}</Link>
           </li>
           ))}
         </ul>

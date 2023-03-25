@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import MobileHome from './mobile';
-import DesktopHome from './desktop';
+//import DesktopHome from './desktop';
+import DesktopHome from './about';
 import React, {useState, useEffect} from 'react';
 import { Audiowide } from 'next/font/google'
 
