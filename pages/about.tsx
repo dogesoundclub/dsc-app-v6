@@ -67,6 +67,7 @@ const AboutPage = () => {
             Our ultimate mission at Doge Sound Club is to create a world where everyone can be a creator, unrestricted by licensing barriers or other limitations. We aim to make it easy for ordinary people to express their creativity and contribute to a shared universe of stories and experiences.
             <br/><br/>
             To learn more about the Doge Sound Club, our team, and our various NFT offerings, please visit our website and join our vibrant community.
+            <br/><br/>
             </div>
           </div>
         </div>
