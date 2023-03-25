@@ -3,6 +3,9 @@ import Modal from '../../components/modal/MobileModalPortal';
 import MobileNav from '../../components/mobile/MobileNav';
 import Dogesound from "../../components/mobile/Dogesound";
 import Fixed from "../../components/mobile/fixed";
+import Banner1 from "../../components/mobile/banner1";
+import Banner2 from "../../components/mobile/banner2";
+import Banner3 from "../../components/mobile/banner3";
 
 const MobileHome = () => {
   return (
@@ -14,6 +17,9 @@ const MobileHome = () => {
       <Dogesound></Dogesound>
       <MobileNav></MobileNav>
       <Fixed></Fixed>
+      <Banner1></Banner1>
+      <Banner2></Banner2>
+      <Banner3></Banner3>
       <div style={{padding: "10px", color: "#000"}}>
         <br/>
         Doge Sound Club (DSC) is a collaboratable fiction based on the initial settings like the world we live is a giant simulation and like ordinary nonsencial jokes among people can make bugs and the result, break the world and make you free.
