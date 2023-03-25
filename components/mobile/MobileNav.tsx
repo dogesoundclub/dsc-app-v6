@@ -23,7 +23,7 @@ const MobileNav = () => {
       <nav className={styles.nav}>
         <ul className={styles.ul}>
           {navigation.map((item) => (
-            <li className={styles.li}><Link href={item.href} className={styles.link}>{item.name}</Link></li>
+            <li key={item.name} className={styles.li}><Link href={item.href} className={styles.link}>{item.name}</Link></li>
           ))}
         </ul>
       </nav>
