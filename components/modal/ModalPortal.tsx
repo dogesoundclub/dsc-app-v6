@@ -31,7 +31,7 @@ export default function BasicModal() {
             <span>Saturday Live Gaesori</span>
             <a onClick={handleClose} style={{color: "white"}}>X</a>
           </div>
-          <img src="/poster.png" style={{width: "400px"}}/>
+          <a href="https://twitter.com/medo_NFP/status/1638039507399512064"><img src="/poster.png" style={{width: "400px"}}/></a>
         </Box>
       </Modal>
     </div>

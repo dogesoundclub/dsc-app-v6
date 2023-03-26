@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from '@/styles/desktop/Dogesound.module.css';
+import styles from '@/styles/mobile/Dogesound.module.css';
 
 const Dogesound = () => {
     const [isData, setData] = useState('');
