@@ -16,8 +16,15 @@ const SidebarLeft = () => {
             <div style={{padding: "10px 0px 0px 0px"}}>
                 <img src="/fbi_warning.png" style={{width: "100%"}}/>
             </div>
+            <div style={{position: "relative", fontSize: "5px", background: "#00000060", color: "#fff", left: "7px", top: "-15px"}}>
+                Unless otherwise stated, the content of this page is licensed under<br></br>
+                Creative Contents Attribution-Share Alike 4.0 International License
+            </div>
             <div style={{fontSize: "7px"}}>
-                @2023 DSC LABEL inc. | support@dsclabel.co.kr
+                @2023 DSC LABEL inc. | support@dsclabel.co.kr 
+            </div>
+            <div style={{fontSize: "7px", textAlign: "right"}}>
+                <img src="./CC_BY-SA_icon.png" alt="" style={{width: "45px"}}/>
             </div>
             </div>
         </div>

@@ -31,7 +31,7 @@ const MobileHome = () => {
       <Banner2></Banner2>
       <Banner3></Banner3>
       <div style={{padding: "10px", color: "#000"}}>
-      <br/>
+            <br/>
             Welcome to the Doge Sound Club (DSC), a friendly community that embraces creativity and collaboration through the use of generative Non-Fungible Tokens (NFTs) and an open-license approach.
             <br/><br/>
             Doge Sound Club is centered around the concept of &quot;Doge Sound,&quot; which playfully refers to nonsensical jokes and sayings, known as &quot;Gaesori&quot; in Korean. The term &quot;Doge Sound&quot; derives from the Korean words &quot;Gae&quot; (meaning dog) and &quot;Sori&quot; (meaning sound), signifying lighthearted, entertaining conversations.
@@ -63,7 +63,11 @@ const MobileHome = () => {
             <br/><br/>
             To learn more about the Doge Sound Club, our team, and our various NFT offerings, please visit our website and join our vibrant community.
             <br/><br/>
-        <span style={{color: "#838383", fontSize: "13px"}}>@2023 DSC LABEL inc. support@dsclabel.co.kr</span>
+            <div style={{fontSize: "13px", background: "#00000060", color: "#fff"}}>Unless otherwise stated, the content of this page is licensed under Creative Contents Attribution-Share Alike 4.0 International License</div>
+          <span style={{color: "#838383", fontSize: "13px"}}>@2023 DSC LABEL inc. support@dsclabel.co.kr</span>
+          <div style={{fontSize: "7px", textAlign: "right"}}>
+                  <img src="./CC_BY-SA_icon.png" alt="" style={{width: "45px"}}/>
+          </div>
       </div>
     </div>
   );

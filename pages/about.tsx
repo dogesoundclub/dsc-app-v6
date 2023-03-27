@@ -26,6 +26,8 @@ const AboutPage = () => {
           <div style={{display: "flex", justifyContent: "space-between", padding: "20px"}}>
             <span style={{color: "#36B167", fontSize: "2em"}}>About</span>
             <div>
+              <a href="https://github.com/dogesoundclub"><img src="/github.png" style={{width: "32px"}}/></a>
+              <a href="https://opensea.io/collection/dogesoundclub-mates"><img src="/opensea.png" style={{width: "32px"}}/></a>
               <a href="https://discord.gg/dogesoundclub"><img src="/sns/discord.png" style={{width: "32px"}}/></a>
               <a href="https://www.instagram.com/dogesoundclub/"><img src="/sns/instagram.png" style={{width: "32px"}}/></a>
               <a href="https://twitter.com/dogesoundclub"><img src="/sns/twitter.png" style={{width: "32px"}}/></a>
