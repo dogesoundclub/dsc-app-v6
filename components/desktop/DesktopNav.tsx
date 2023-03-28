@@ -49,8 +49,7 @@ const DesktopNav = () => {
           </div>
         <ul className={styles.ul}>
           {navigation.map((item) => (
-          <li key={item.name} className={styles.li}><Link href={item.href} className={styles.link}>{item.name}</Link>
-          </li>
+          <li key={item.name} className={styles.li}><Link href={item.href} className={styles.link}>{item.name}</Link></li>
           ))}
         </ul>
       </nav>

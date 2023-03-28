@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '@/styles/mobile/MobileNav.module.css';
 
+
 // const navigation = [
 //   { name: 'about', href: '/about' },
 //   { name: 'gallery', href: '/gallery' },
@@ -19,6 +20,9 @@ const navigation = [
 ];
 
 const MobileNav = () => {
+
+
+
   return (
       <nav className={styles.nav}>
         <ul className={styles.ul}>
