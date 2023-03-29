@@ -56,14 +56,14 @@ const Fixed = () => {
           <div style={{background: "#00000080", fontSize: "25px", padding: "2px", display: "flex", justifyContent: "flex-end", alignItems: "center"}}>
             <a onClick={handleClose} style={{color: "white", fontSize: "10px"}}>X</a>
           </div>
-          <a href="https://discord.gg/dogesoundclub"><img src="/sns/discord.png" style={{width: "32px"}}/></a>
-          <a href="https://www.instagram.com/dogesoundclub/"><img src="/sns/instagram.png" style={{width: "32px"}}/></a>
-          <a href="https://twitter.com/dogesoundclub"><img src="/sns/twitter.png" style={{width: "32px"}}/></a>
-          <a href="mailto:support@dsclabel.co.kr"><img src="/sns/email.png" style={{width: "32px"}}/></a>
-          <a href="https://t.me/dogesoundclub"><img src="/sns/telegram.png" style={{width: "32px"}}/></a>
-          <a href="https://www.youtube.com/@dosocl"><img src="/sns/youtube.png" style={{width: "32px"}}/></a>
-          <a href="https://github.com/dogesoundclub"><img src="/github.png" style={{width: "32px"}}/></a>
-          <a href="https://opensea.io/collection/dogesoundclub-mates"><img src="/opensea.png" style={{width: "32px"}}/></a>
+          <a href="https://discord.gg/dogesoundclub" target='_blank'><img src="/sns/discord.png" style={{width: "32px"}}/></a>
+          <a href="https://www.instagram.com/dogesoundclub/" target='_blank'><img src="/sns/instagram.png" style={{width: "32px"}}/></a>
+          <a href="https://twitter.com/dogesoundclub" target='_blank'><img src="/sns/twitter.png" style={{width: "32px"}}/></a>
+          <a href="mailto:support@dsclabel.co.kr" target='_blank'><img src="/sns/email.png" style={{width: "32px"}}/></a>
+          <a href="https://t.me/dogesoundclub" target='_blank'><img src="/sns/telegram.png" style={{width: "32px"}}/></a>
+          <a href="https://www.youtube.com/@dosocl" target='_blank'><img src="/sns/youtube.png" style={{width: "32px"}}/></a>
+          <a href="https://github.com/dogesoundclub" target='_blank'><img src="/github.png" style={{width: "32px"}}/></a>
+          <a href="https://opensea.io/collection/dogesoundclub-mates" target='_blank'><img src="/opensea.png" style={{width: "32px"}}/></a>
       </Box>
     </div>
     </>
