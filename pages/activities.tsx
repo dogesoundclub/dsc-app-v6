@@ -26,7 +26,7 @@ const ActivitiesPage = () => {
           <div className={styles.div} style={{ flexBasis: "70%", background: "#fff", color: "#000"}}>
             <div style={{display: "flex"}}>
               <span style={{color: "#36B167", fontSize: "30px"}}>ACIVITIES </span>
-              <span style={{ marginTop: "20px", marginBottom: "20px"}}>We provide numerous contents that matches DSC's identity.</span>
+              <span style={{ marginTop: "20px", marginBottom: "20px"}}>We provide numerous contents that matches DSC&apos;s identity.</span>
             </div>
             <div style={{display: "flex", justifyContent: "space-around"}}>
               <div>
