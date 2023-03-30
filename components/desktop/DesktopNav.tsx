@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from '@/styles/desktop/DesktopNav.module.css';
-import Image from 'next/image';
 import { useState, useRef } from 'react'
 
 // const navigation = [
