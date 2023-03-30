@@ -105,3 +105,23 @@ a {
     color-scheme: dark;
   }
 }
+@font-face {
+  font-family: 'Digital Numbers';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/DigitalNumbers-Regular.ttf') format('truetype');
+}
+
+.dodo {
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+      transform: translateX(250%);
+  }
+
+  to {
+      transform: translateX(-250%);
+  }
+}
