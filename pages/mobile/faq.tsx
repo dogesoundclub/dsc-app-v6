@@ -1,3 +1,6 @@
+import MobileNav from "../../components/mobile/MobileNav";
 export default function Faq() {
-    return <h1>FAQ</h1>;
+    return (
+        <MobileNav></MobileNav>
+    );
 }

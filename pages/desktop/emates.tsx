@@ -3,11 +3,9 @@ import SidebarLeft from "../../components/desktop/SidebarLeft";
 import SidebarRight from "../../components/desktop/SidebarRight";
 import styles from '@/styles/desktop/Gallery.module.css';
 import Link from 'next/link';
-import MateParts from "../MateParts.json"
 
-export default function GalleryPage() {
-
-    return  (
+export default function EmatesPage() {
+    return (
       <MainLayout>
         <div style={{ display: "flex" }}>
           <SidebarLeft></SidebarLeft>
@@ -18,7 +16,7 @@ export default function GalleryPage() {
               </div>
                 <input type="text" placeholder="search..." style={{padding: "7px", background:"#D9D9D9", border: "none", marginTop: "10px"}}/>
                 <button style={{padding: "6px" }}>Go!</button>
-                <button><Link href='/bmcs'>BMCS</Link></button><button><Link href='/emates'>EMATES</Link></button>
+                <button><Link href='/bmcs'>BMCS</Link></button><button><Link href='/gallery'>MATE</Link></button>
                 <ul>
                   <li className={styles.li}>MY MATES <img src="./one.png"/></li>
                   <li className={styles.li}>FACE <img src="./one.png"/></li>
@@ -37,28 +35,28 @@ export default function GalleryPage() {
             <div className={styles.gallery}>
               <img src="./pray.png" style={{width: "100%"}}/>
               <div className={styles.mates} style={{display: "flex", width: "100%"}}>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
               </div>
               <div className={styles.mates} style={{display: "flex", width: "100%"}}>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
               </div>
               <div className={styles.mates} style={{display: "flex", width: "100%"}}>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
-                  <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
+                  <div><img src="https://storage.googleapis.com/emates/klaytn/Emates-0.png" alt="" />EMate #000</div>
               </div>
             </div>
             </div>
