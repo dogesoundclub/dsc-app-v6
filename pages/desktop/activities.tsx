@@ -2,6 +2,7 @@ import MainLayout from "../../components/MainLayout";
 import SidebarLeft from "../../components/desktop/SidebarLeft";
 import SidebarRight from "../../components/desktop/SidebarRight";
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function ActivitiesPage(){
   const [isShown1, setIsShown1] = useState(false);
@@ -22,7 +23,7 @@ export default function ActivitiesPage(){
                 <span className="dodo">DSC will save the world</span>
             </div>
             <div className="actImg01"  style={{display: "flex", justifyContent: "space-around"}}>
-                <img src="/activities/0.png" style={{width: "100%"}}/>
+                <Link href='https://dogesound.club/activities'><img src="/activities/0.png" style={{width: "100%"}}/></Link>
             </div>
             <div style={{display: "flex", justifyContent: "space-around"}}>
               <div style={{width: "100%"}} onMouseEnter={() => setIsShown1(true)} onMouseLeave={() => setIsShown1(false)}>
