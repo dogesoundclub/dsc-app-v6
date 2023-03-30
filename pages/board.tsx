@@ -1,11 +1,8 @@
-import MainLayout from "../components/MainLayout";
+import DesktopBoard from './desktop/board';
+import MobileBoard from './mobile/board';
+import useIsMobile from '../hooks/display';
 
-const BoardPage = () => {
-  return (
-    <MainLayout>
-
-    </MainLayout>
-  );
+export default function BoardPage() {
+  const display = useIsMobile();
+  return display ? <MobileBoard /> : <DesktopBoard />;
 };
-
-export default BoardPage;

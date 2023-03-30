@@ -1,11 +1,8 @@
-import MainLayout from "../components/MainLayout";
+import DesktopFaq from './desktop/faq';
+import MobileFaq from './mobile/faq';
+import useIsMobile from '../hooks/display';
 
-const FAQPage = () => {
-  return (
-    <MainLayout>
-      <h1>FAQ Page</h1>
-    </MainLayout>
-  );
-};
-
-export default FAQPage;
+export default function Index() {
+  const display = useIsMobile();
+  return display ? <MobileFaq /> : <DesktopFaq />;
+}
