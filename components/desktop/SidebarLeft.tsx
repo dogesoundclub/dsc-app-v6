@@ -1,3 +1,4 @@
+import Link from 'next/link';
 const SidebarLeft = () => {
     return (
         <div style={{ flexBasis: "15%", background: "#C1C1C1", color: "#656565" }}>
@@ -20,11 +21,14 @@ const SidebarLeft = () => {
                 Unless otherwise stated, the content of this page is licensed under<br></br>
                 Creative Contents Attribution-Share Alike 4.0 International License
             </div>
-            <div style={{fontSize: "7px"}}>
-                @2023 DSC LABEL inc. | support@dsclabel.co.kr 
+            <div style={{fontSize: "7px", textAlign: "center"}}>
+                <Link href="https://creativecommons.org/licenses/by-sa/4.0/" target='_blank'><img src="./CC_BY-SA_icon.png" style={{width: "100px"}}/></Link>
             </div>
-            <div style={{fontSize: "7px", textAlign: "right"}}>
-                <img src="./CC_BY-SA_icon.png" alt="" style={{width: "45px"}}/>
+            <div style={{fontSize: "7px", textAlign: "center"}}>
+                DSC LABEL inc.
+            </div>
+            <div style={{fontSize: "7px", textAlign: "center"}}>
+                support@dsclabel.co.kr 
             </div>
             </div>
         </div>

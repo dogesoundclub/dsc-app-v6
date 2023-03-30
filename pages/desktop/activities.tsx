@@ -15,14 +15,14 @@ export default function ActivitiesPage(){
         <div style={{ display: "flex" }}>
           <SidebarLeft></SidebarLeft>
           <div style={{ flexBasis: "70%", background: "#fff", color: "#000", textAlign: "center", overflow:"scroll", height: "90vh"}}>
-            <div style={{display: "flex", alignContent: "flex-end", justifyContent: "flex-start", height: "50px", alignItems: "flex-end" }}>
-              <div style={{color: "#36B167", fontSize: "30px", textDecoration: "underline", paddingLeft: "40px"}}>ACIVITIES </div>
-              <div style={{fontFamily: "Abel", paddingLeft: "20px"}}>We provide numerous contents that matches DSC&apos;s identity.</div>
+            <div style={{ display: "flex", alignContent: "flex-end", justifyContent: "flex-start", height: "50px", alignItems: "flex-end" }}>
+              <div style={{ color: "#36B167", fontSize: "30px", textDecoration: "underline", paddingLeft: "40px"}}>ACTIVITIES </div>
+              <div style={{ fontFamily: "Abel", paddingLeft: "20px"}}>We provide numerous contents that matches DSC&apos;s identity.</div>
             </div>
-            <div style={{display: "flex", justifyContent: "space-around", background: "url(./activities/5.png)", padding: "10px", backgroundSize: "cover", color: "#fff", fontFamily: "Digital Numbers"}}>
+            <div style={{ display: "flex", justifyContent: "space-around", background: "url(./activities/5.png)", padding: "10px", backgroundSize: "cover", color: "#fff", fontFamily: "Digital Numbers"}}>
                 <span className="dodo">DSC will save the world</span>
             </div>
-            <div className="actImg01"  style={{display: "flex", justifyContent: "space-around"}}>
+            <div style={{display: "flex", justifyContent: "space-around"}}>
                 <Link href='https://dogesound.club/activities'><img src="/activities/0.png" style={{width: "100%"}}/></Link>
             </div>
             <div style={{display: "flex", justifyContent: "space-around"}}>
