@@ -2,30 +2,14 @@ import MainLayout from "../components/MainLayout";
 import SidebarLeft from "../components/desktop/SidebarLeft";
 import SidebarRight from "../components/desktop/SidebarRight";
 import styles from '@/styles/desktop/Ready.module.css';
-import { Abel, Yantramanav } from 'next/font/google'
-import React, {useState, useEffect} from 'react';
 import MobileReady from './mobile/ready';
 import Link from 'next/link';
+import useIsMobile from '../hooks/display';
 
-const abel = Abel({ 
-  weight: '400',
-  subsets: ['latin']
-})
+export default function ReadyPage() {
+  const display = useIsMobile();
 
-const ReadyPage = () => {
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor;
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent)) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  }, []);
-
-    return isMobile ? <MobileReady /> : (
+    return display ? <MobileReady /> : (
       <MainLayout>
         <div style={{ display: "flex" }}>
           <SidebarLeft></SidebarLeft>
@@ -47,5 +31,3 @@ const ReadyPage = () => {
       </MainLayout>
     );
   };
-  
-  export default ReadyPage;

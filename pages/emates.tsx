@@ -2,25 +2,13 @@ import MainLayout from "../components/MainLayout";
 import SidebarLeft from "../components/desktop/SidebarLeft";
 import SidebarRight from "../components/desktop/SidebarRight";
 import styles from '@/styles/desktop/Gallery.module.css';
-import React, {useState, useEffect} from 'react';
 import MobileReady from './mobile/ready';
 import Link from 'next/link';
+import useIsMobile from '../hooks/display';
 
-
-const GalleryPage = () => {
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor;
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent)) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  }, []);
-
-    return isMobile ? <MobileReady /> : (
+export default function EmatesPage() {
+  const display = useIsMobile();
+    return display ? <MobileReady /> : (
       <MainLayout>
         <div style={{ display: "flex" }}>
           <SidebarLeft></SidebarLeft>
@@ -80,5 +68,3 @@ const GalleryPage = () => {
       </MainLayout>
     );
   };
-  
-  export default GalleryPage;
