@@ -10,6 +10,9 @@ export default function Document() {
         <meta name="description" content="dogesoundclub"/>
         <meta name="keywords" content="dogesoundclub" />
         <meta name="naver-site-verification" content="9d659a94c3d81b69ed2a0309687da807314f35bd" />
+        <meta property="og:title" content="dogesoundclub" />
+        <meta property="og:description" content="dogesoundclub" />
+        <meta property="og:image" content="https://dogesound.club/thumb.jpg" />
         <meta property="og:type" content="website" />
       </Head>
       <body>

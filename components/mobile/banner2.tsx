@@ -7,7 +7,7 @@ const Banner2 = () => {
 
 
   return open ? <></> :(
-    <div style={{maxWidth: "425px", top: "100%", position:"absolute",marginLeft: "100px"}}>
+    <div style={{maxWidth: "425px", top: "60%", position:"absolute",marginLeft: "100px"}}>
       <div>
           <div style={{background: "#00000080", fontSize: "15px", padding: "3px", textAlign: "right", width:"90%"}}>
             <a onClick={handleClose} style={{color: "white"}}>X</a>

@@ -30,7 +30,7 @@ export default function About() {
       <Banner1></Banner1>
       <Banner2></Banner2>
       <Banner3></Banner3>
-      <div style={{padding: "10px", color: "#000"}}>
+      <div style={{padding: "10px", color: "#000", overflow:"scroll", height: "100vh"}}>
             <br/>
             Welcome to the Doge Sound Club (DSC), a friendly community that embraces creativity and collaboration through the use of generative Non-Fungible Tokens (NFTs) and an open-license approach.
             <br/><br/>
