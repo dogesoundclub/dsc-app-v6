@@ -20,7 +20,7 @@ export default function ActivitiesPage(){
               <div style={{ fontFamily: "Abel", paddingLeft: "20px"}}>We provide numerous contents that matches DSC&apos;s identity.</div>
             </div>
             <div style={{ display: "flex", justifyContent: "space-around", background: "url(./activities/5.png)", padding: "10px", backgroundSize: "cover", color: "#fff", fontFamily: "Digital Numbers"}}>
-                <span className="dodo">DSC will save the world</span>
+                <span className="dodo">OPEN YOUR UNIVERSE. DSC WILL WELCOME YOU.</span>
             </div>
             <div style={{display: "flex", justifyContent: "space-around"}}>
                 <Link href='https://dogesound.club/activities'><img src="/activities/0.png" style={{width: "100%"}}/></Link>
