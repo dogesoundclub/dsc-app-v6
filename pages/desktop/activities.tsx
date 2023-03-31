@@ -23,7 +23,12 @@ export default function ActivitiesPage(){
                 <span className="dodo">OPEN YOUR UNIVERSE. DSC WILL WELCOME YOU.</span>
             </div>
             <div style={{display: "flex", justifyContent: "space-around"}}>
-                <Link href='https://dogesound.club/activities'><img src="/activities/0.png" style={{width: "100%"}}/></Link>
+                <Link href='https://dogesound.club/activities'>
+                  <img src="/activities/0_0.png" style={{width: "100%"}}/>
+                </Link>
+                <Link href='https://dogesound.club/activities'>
+                  <img src="/activities/0_1.png" style={{width: "100%"}}/>
+                </Link>
             </div>
             <div style={{display: "flex", justifyContent: "space-around"}}>
               <div style={{width: "100%"}} onMouseEnter={() => setIsShown1(true)} onMouseLeave={() => setIsShown1(false)}>
