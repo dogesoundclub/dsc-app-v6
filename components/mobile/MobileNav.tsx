@@ -19,10 +19,7 @@ const navigation = [
   { name: 'FAQ', href: '/ready' }
 ];
 
-const MobileNav = () => {
-
-
-
+export default function MobileNav() {
   return (
       <nav className={styles.nav}>
         <ul className={styles.ul}>
@@ -33,4 +30,3 @@ const MobileNav = () => {
       </nav>
   );
 };
-export default MobileNav;

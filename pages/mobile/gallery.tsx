@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '@/styles/mobile/Gallery.module.css';
 import MobileNav from "../../components/mobile/MobileNav";
 import Dogesound from "../../components/mobile/Dogesound";
-
+import Footer from "../../components/mobile/Footer";
 export default function Gallery() {
 
   return (
@@ -35,6 +35,7 @@ export default function Gallery() {
                     <div><img src="https://storage.googleapis.com/dsc-mate/336/dscMate-0.png" alt="" />Mate #000</div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
   );
 };

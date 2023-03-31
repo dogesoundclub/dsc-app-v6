@@ -1,5 +1,4 @@
-import Image from 'next/image'
-const SidebarLeft = () => {
+export default function SidebarLeft() {
     return (
         <div style={{ flexBasis: "15%", textAlign: "center", background: "#C1C1C1" }}>
             <div>
@@ -14,4 +13,3 @@ const SidebarLeft = () => {
         </div>
     );
 };
-export default SidebarLeft;

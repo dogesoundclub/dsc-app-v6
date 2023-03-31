@@ -14,7 +14,7 @@ export default function XPPage() {
         </div>
         <div className="window-body">
         <section className="field-row" style={{justifyContent: "center"}}>
-            <img src="/klaytnsuccess.png" style={{width:"32px"}}/>
+            <img src="/certification/klaytnsuccess.png" style={{width:"32px"}}/>
             <p>Certification successfully finished!</p>
         </section>
         <section className="field-row" style={{justifyContent: "center"}}>
@@ -24,24 +24,3 @@ export default function XPPage() {
     </div>
     );
 }
-
-{/* <div className="window" style={{margin: "32px", width: "250px"}}>
-<div className="title-bar">
-  <div className="title-bar-text">
-    My First Program
-  </div>
-
-  <div className="title-bar-controls">
-    <button aria-label="Minimize"></button>
-    <button aria-label="Maximize"></button>
-    <button aria-label="Close"></button>
-  </div>
-</div>
-<div className="window-body">
-  <p>Hello, world!</p>
-  <section className="field-row" style={{justifyContent: "flex-end"}}>
-    <button>OK</button>
-    <button>Cancel</button>
-  </section>
-</div>
-</div> */}

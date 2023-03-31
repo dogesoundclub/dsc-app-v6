@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from '@/styles/mobile/Dogesound.module.css';
 
-const Dogesound = () => {
+export default function Dogesound() {
     const [isData, setData] = useState('');
     const [isMix, setMix] = useState('');
 
@@ -34,4 +34,3 @@ const Dogesound = () => {
         </div>
     );
   };
-  export default Dogesound;

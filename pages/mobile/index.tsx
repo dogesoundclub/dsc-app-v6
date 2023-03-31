@@ -7,7 +7,8 @@ import Banner1 from "../../components/mobile/banner1";
 import Banner2 from "../../components/mobile/banner2";
 import Banner3 from "../../components/mobile/banner3";
 import { Alegreya_Sans } from "next/font/google"
-
+import Layout from "../../components/mobile/Layout";
+import Footer from "../../components/mobile/Footer";
 const alegreya_Sans = Alegreya_Sans({ 
   weight: '400',
   subsets: ['latin']
@@ -19,7 +20,7 @@ const alegreya_Sans_bold = Alegreya_Sans({
 
 const MobileHome = () => {
   return (
-    <div style={{maxWidth: "425px", margin: "0 auto", background: "#D9D9D9"}}>
+    <Layout>
       <Modal></Modal>
       <div>
         <img src="dogesoundclub_mobile.png" style={{width: "100%"}}/>
@@ -30,7 +31,7 @@ const MobileHome = () => {
       <Banner1></Banner1>
       <Banner2></Banner2>
       <Banner3></Banner3>
-      <div style={{padding: "10px", color: "#000", overflow:"scroll", height: "70vh"}}>
+      <div style={{padding: "10px", color: "#000", overflow:"scroll"}}>
             <br/>
             Welcome to the Doge Sound Club (DSC), a friendly community that embraces creativity and collaboration through the use of generative Non-Fungible Tokens (NFTs) and an open-license approach.
             <br/><br/>
@@ -64,12 +65,12 @@ const MobileHome = () => {
             To learn more about the Doge Sound Club, our team, and our various NFT offerings, please visit our website and join our vibrant community.
             <br/><br/>
             <div style={{fontSize: "13px", background: "#00000060", color: "#fff"}}>Unless otherwise stated, the content of this page is licensed under Creative Contents Attribution-Share Alike 4.0 International License</div>
-          <span style={{color: "#838383", fontSize: "13px"}}>@2023 DSC LABEL inc. support@dsclabel.co.kr</span>
+          <Footer></Footer>
           <div style={{fontSize: "7px", textAlign: "right"}}>
                   <img src="./CC_BY-SA_icon.png" alt="" style={{width: "45px"}}/>
           </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
