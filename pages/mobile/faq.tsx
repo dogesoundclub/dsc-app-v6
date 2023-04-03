@@ -1,8 +1,8 @@
-import Layout from "../../components/mobile/Layout";
-import MobileNav from "../../components/mobile/MobileNav";
-import Dogesound from "../../components/mobile/Dogesound";
-import Footer from "../../components/mobile/Footer";
-import Popup from "../../components/mobile/popup";
+import Layout from "@/components/mobile/Layout";
+import MobileNav from "@/components/mobile/MobileNav";
+import Dogesound from "@/components/mobile/Dogesound";
+import Footer from "@/components/mobile/Footer";
+import Popup from "@/components/mobile/Popup";
 
 export default function Faq() {
     return (

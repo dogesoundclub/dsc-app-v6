@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from '@/styles/mobile/Gallery.module.css';
-import MobileNav from "../../components/mobile/MobileNav";
-import Dogesound from "../../components/mobile/Dogesound";
-import Footer from "../../components/mobile/Footer";
+import MobileNav from "@/components/mobile/MobileNav";
+import Dogesound from "@/components/mobile/Dogesound";
+import Footer from "@/components/mobile/Footer";
+import Filter from '@/components/mobile/Filter';
 
 export default function Gallery() {
 
@@ -13,6 +14,7 @@ export default function Gallery() {
             </div>
             <Dogesound></Dogesound>
             <MobileNav></MobileNav>
+            <Filter></Filter>
             <div style={{textAlign: "center"}}>
                 <button>Filter</button>
                 <input type="text" placeholder='Search...'/>

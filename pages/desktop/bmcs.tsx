@@ -1,6 +1,6 @@
-import MainLayout from "../../components/MainLayout";
-import SidebarLeft from "../../components/desktop/SidebarLeft";
-import SidebarRight from "../../components/desktop/SidebarRight";
+import MainLayout from "@/components/MainLayout";
+import SidebarLeft from "@/components/desktop/SidebarLeft";
+import SidebarRight from "@/components/desktop/SidebarRight";
 import styles from '@/styles/desktop/Gallery.module.css';
 import Link from 'next/link';
 
@@ -10,7 +10,7 @@ export default function BmcsPage() {
     <MainLayout>
       <div style={{ display: "flex" }}>
         <SidebarLeft></SidebarLeft>
-        <div className={styles.div} style={{ flexBasis: "70%", background: "#fff", color: "#000", display: "flex"}}>
+        <div className={styles.div} style={{ width: "70%", background: "#fff", color: "#000", display: "flex"}}>
           <div className={styles.cate}>
             <div className={styles.one}>
               <div className={styles.text}>GALLERY</div>

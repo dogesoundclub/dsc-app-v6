@@ -1,10 +1,9 @@
-import * as React from 'react';
+import { useState } from 'react';
 
 export default function Banner1() {
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(true);
-
 
   return open ? <></> :(
     <div style={{maxWidth: "425px", top: "30%", position: "absolute", marginLeft: "15px"}}>

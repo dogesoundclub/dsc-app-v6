@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Caver from 'caver-js';
 import styles from '@/styles/desktop/Dogesound.module.css';
 
 export default function Dogesound() {
     const [isData, setData] = useState('');
     const [isMix, setMix] = useState('');
-    const [isCaver, setCaver] = useState('');
 
     async function getDogesound(){
         const res = await fetch("https://api.dogesound.club/dogesoundwinner")
@@ -18,16 +16,9 @@ export default function Dogesound() {
         setMix(data)
     }
 
-    // async function getCaver(){
-    //     const caver = new Caver("wss://public-en-cypress.klaytn.net/ws");
-    //     const res = await caver.rpc.klay.getClientVersion()
-    //     // setCaver(res)
-    // }
-
     useEffect(()=>{
         getDogesound()
         getMixprice()
-        // getCaver()
     },[])
 
     return (
@@ -37,7 +28,6 @@ export default function Dogesound() {
                     <div className={styles.content}>{isData}</div>
                 </div>
             </div>
-            {/* {isMix} {isCaver} */}
             <div style={{display: 'flex', justifyContent: 'space-around'}}>
                 <div style={{width: "50%"}}><img src="/banner1.png" style={{width: "100%"}}/></div>
                 <div className={styles.mix} style={{width: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff" }}>
