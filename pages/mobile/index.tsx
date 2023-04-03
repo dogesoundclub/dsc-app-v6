@@ -65,9 +65,6 @@ export default function MobileHome() {
             <br/><br/>
             <div style={{fontSize: "13px", background: "#00000060", color: "#fff"}}>Unless otherwise stated, the content of this page is licensed under Creative Contents Attribution-Share Alike 4.0 International License</div>
           <Footer></Footer>
-          <div style={{fontSize: "7px", textAlign: "right"}}>
-                  <img src="./CC_BY-SA_icon.png" alt="" style={{width: "45px"}}/>
-          </div>
       </div>
     </Layout>
   );
