@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useState, useRef } from 'react'
 import styled from 'styled-components'
 
@@ -12,7 +11,7 @@ const Box = styled.div`
 
 export default function Fixed() {
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(true);
 
   const [isPlaying, setIsPlaying] = useState<boolean>(false);

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Banner1() {
+export default function Popup() {
 
   const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(true);
@@ -8,10 +8,10 @@ export default function Banner1() {
   return open ? <></> :(
     <div style={{maxWidth: "425px", top: "30%", position: "absolute", marginLeft: "15px"}}>
       <div>
-          <div style={{background: "#00000080", fontSize: "15px", padding: "3px", textAlign: "right", width: "70%"}}>
+          <div style={{background: "#00000080", fontSize: "15px", padding: "3px", textAlign: "right", width: "50%"}}>
             <a onClick={handleClose} style={{color: "white"}}>X</a>
           </div>
-          <img src="/fbi_warning.png" style={{width: "70%"}}/>
+          <img src="/faq_mobile/popup.png" style={{width: "50%"}}/>
       </div>
     </div>
   );
