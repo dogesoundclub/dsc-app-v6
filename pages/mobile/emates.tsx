@@ -3,7 +3,7 @@ import styles from '@/styles/mobile/Gallery.module.css';
 import MobileNav from "../../components/mobile/MobileNav";
 import Dogesound from "../../components/mobile/Dogesound";
 
-export default function Ready() {
+export default function EmatesPage() {
   return (
         <div style={{maxWidth: "425px", margin: "0 auto", background: "#D9D9D9"}}>
             <div>

@@ -26,7 +26,7 @@ export default function ActivitiesPage() {
                   <img src="/activities_mobile/0_2.png" style={{width: "100%"}}/>
                 </Link>
             </div>
-            <div style={{width: "100%"}} onMouseEnter={() => setIsShown1(true)} onMouseLeave={() => setIsShown1(false)}>
+            <div style={{width: "100%"}} onMouseEnter={() => isShown1 ? setIsShown1(false) : setIsShown1(true)}>
               {!isShown1 && (
                 <img className="img" src="/activities_mobile/1.png" style={{width: "100%", height:"100%"}}/>
               )}
@@ -34,7 +34,7 @@ export default function ActivitiesPage() {
                 <img className="imghover" src="/activities_mobile/1hover.png" style={{width: "100%", height:"100%"}}/>
               )}
             </div>
-            <div style={{width: "100%"}} onMouseEnter={() => setIsShown2(true)} onMouseLeave={() => setIsShown2(false)}>
+            <div style={{width: "100%"}} onMouseEnter={() => isShown2 ? setIsShown2(false) : setIsShown2(true)}>
               {!isShown2 && (
                 <img src="/activities_mobile/2.png" style={{width: "100%", height:"100%"}}/>
               )}
@@ -42,7 +42,7 @@ export default function ActivitiesPage() {
                 <img className="imghover" src="/activities_mobile/2hover.png" style={{width: "100%", height:"100%"}}/>
               )}
             </div>
-            <div style={{width: "100%"}} onMouseEnter={() => setIsShown3(true)} onMouseLeave={() => setIsShown3(false)}>
+            <div style={{width: "100%"}} onMouseEnter={() => isShown3 ? setIsShown3(false) : setIsShown3(true)}>
               {!isShown3 && (
                 <img src="/activities_mobile/3.png" style={{width: "100%", height:"100%"}}/>
               )}
@@ -50,7 +50,7 @@ export default function ActivitiesPage() {
                 <img className="imghover" src="/activities_mobile/3hover.png" style={{width: "100%", height:"100%"}}/>
               )}
             </div>
-            <div style={{width: "100%"}} onMouseEnter={() => setIsShown4(true)} onMouseLeave={() => setIsShown4(false)}>
+            <div style={{width: "100%"}} onMouseEnter={() => isShown4 ? setIsShown4(false) : setIsShown4(true)}>
               {!isShown4 && (
                 <img src="/activities_mobile/4.png" style={{width: "100%", height:"100%"}}/>
               )}
