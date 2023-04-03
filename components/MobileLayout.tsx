@@ -1,4 +1,4 @@
-import DesktopNav from "./desktop/DesktopNav";
+import MobileNav from "./mobile/MobileNav";
 
 type LayoutProps = {
   user?: any
@@ -6,10 +6,10 @@ type LayoutProps = {
   children: React.ReactNode
 }
 
-export default function MainLayout({ children }: LayoutProps){
+export default function MobileLayout({ children }: LayoutProps){
   return (
     <>
-      <DesktopNav />
+      <MobileNav />
       {children}
     </>
   );

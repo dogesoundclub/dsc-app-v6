@@ -1,4 +1,4 @@
-import DesktopIndex from './about';
+import DesktopIndex from './desktop/about';
 import MobileIndex from './mobile';
 import useIsMobile from '../hooks/display';
 //import DesktopHome from './desktop';

@@ -18,8 +18,7 @@ const navigation = [
   { name: 'FAQ', href: '/ready' }
 ];
 
-const DesktopNav = () => {
-
+export default function DesktopNav() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -54,5 +53,3 @@ const DesktopNav = () => {
       </nav>
   );
 };
-
-export default DesktopNav;

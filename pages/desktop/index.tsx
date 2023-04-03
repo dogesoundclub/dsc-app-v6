@@ -1,7 +1,7 @@
 import React from 'react';
 import DesktopNav from '../../components/desktop/DesktopNav';
 
-const DesktopHome = () => {
+export default function DesktopHome() {
   return (
     <div>
       <DesktopNav />
@@ -9,5 +9,3 @@ const DesktopHome = () => {
     </div>
   );
 };
-
-export default DesktopHome;

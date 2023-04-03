@@ -3,6 +3,7 @@ import styles from '@/styles/mobile/Gallery.module.css';
 import MobileNav from "../../components/mobile/MobileNav";
 import Dogesound from "../../components/mobile/Dogesound";
 import Footer from "../../components/mobile/Footer";
+
 export default function Gallery() {
 
   return (

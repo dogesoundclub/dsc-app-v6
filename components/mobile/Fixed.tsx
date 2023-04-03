@@ -10,8 +10,7 @@ const Box = styled.div`
     background: #ffffff;
 `
 
-
-const Fixed = () => {
+export default function Fixed() {
 
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(true);
@@ -69,4 +68,3 @@ const Fixed = () => {
     </>
   );
 };
-export default Fixed;

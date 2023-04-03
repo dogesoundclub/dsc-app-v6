@@ -1,5 +1,4 @@
 import React from "react";
-import Modal from "../../components/modal/MobileModalPortal";
 import MobileNav from "../../components/mobile/MobileNav";
 import Dogesound from "../../components/mobile/Dogesound";
 import Fixed from "../../components/mobile/Fixed";
@@ -20,7 +19,6 @@ const alegreya_Sans_bold = Alegreya_Sans({
 export default function About() {
   return (
     <div style={{maxWidth: "425px", margin: "0 auto", background: "#D9D9D9"}}>
-      <Modal></Modal>
       <div>
         <img src="dogesoundclub_mobile.png" style={{width: "100%"}}/>
       </div>

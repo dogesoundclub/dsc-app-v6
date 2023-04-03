@@ -4,7 +4,7 @@ import MobileNav from '../../components/mobile/MobileNav';
 import styles from '@/styles/mobile/Ready.module.css';
 import Link from 'next/link';
 
-const Ready = () => {
+export default function Ready() {
   return (
         <div style={{maxWidth: "425px", margin: "0 auto", background: "#D9D9D9"}}>
             <div>
@@ -28,5 +28,3 @@ const Ready = () => {
         </div>
   );
 };
-
-export default Ready;

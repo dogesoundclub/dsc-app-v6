@@ -1,7 +1,8 @@
 import Link from 'next/link';
-const SidebarLeft = () => {
+
+export default function SidebarLeft() {
     return (
-        <div style={{ flexBasis: "15%", background: "#C1C1C1", color: "#656565" }}>
+        <div style={{ width: "15%", background: "#C1C1C1", color: "#656565" }}>
             <div style={{padding: "4%"}}>
             <h2>Popular Dogesound</h2>
             <div style={{padding: "10px 0px 0px 0px"}}>
@@ -34,4 +35,3 @@ const SidebarLeft = () => {
         </div>
     );
 };
-export default SidebarLeft;

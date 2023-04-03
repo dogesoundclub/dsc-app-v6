@@ -6,7 +6,7 @@ type LayoutProps = {
   children: React.ReactNode
 }
 
-export default function MainLayout({ children }: LayoutProps){
+export default function DesktopLayout({ children }: LayoutProps){
   return (
     <>
       <DesktopNav />

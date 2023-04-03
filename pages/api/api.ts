@@ -1,14 +1,22 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
-  name: string
+    dogesound: string
+    mix: string
 }
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-    // const res = await fetch("https://api.dogesound.club/dogesoundwinner")
-    // const data = await res.json()
-    // res.status(200).json({ name:  data })
+    const response = await fetch("https://api.dogesound.club/dogesoundwinner");
+    const a = await response.json();
+
+    const price = await fetch("https://api.dogesound.club/mix/price");
+    const mix = await price.json();
+
+    res.status(200).json({
+            dogesound:  a.dogesound,
+            mix: mix
+    })
 }

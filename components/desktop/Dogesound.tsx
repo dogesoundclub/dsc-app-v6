@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Caver from 'caver-js';
 import styles from '@/styles/desktop/Dogesound.module.css';
 
-const Dogesound = () => {
+export default function Dogesound() {
     const [isData, setData] = useState('');
     const [isMix, setMix] = useState('');
     const [isCaver, setCaver] = useState('');
@@ -47,4 +47,3 @@ const Dogesound = () => {
         </>
     );
   };
-  export default Dogesound;

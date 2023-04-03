@@ -3,7 +3,6 @@ import SidebarLeft from "../../components/desktop/SidebarLeft";
 import SidebarRight from "../../components/desktop/SidebarRight";
 import Dogesound from "../../components/desktop/Dogesound";
 import { Alegreya_Sans } from "next/font/google"
-import Modal from "../../components/modal/ModalPortal";
 
 const alegreya_Sans = Alegreya_Sans({ 
   weight: '400',
@@ -16,7 +15,6 @@ const alegreya_Sans_bold = Alegreya_Sans({
 export default function AboutPage() {
   return (
     <MainLayout>
-      <Modal></Modal>
       <div style={{ display: "flex" }}>
         <SidebarLeft></SidebarLeft>
         <div style={{ flexBasis: "70%", background: "#fff", color: "#000"}}>

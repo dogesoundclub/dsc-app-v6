@@ -1,6 +1,6 @@
 export default function Page404() {
     return (
-        <div style={{ flexBasis: "70%", background: "url('/bg.png')", color: "#000", textAlign: "center", height: "90vh", backgroundSize: "contain", display: "flex", alignItems: "center"}}>
+        <div style={{ flexBasis: "70%", background: "url('/bg.png')", color: "#000", textAlign: "center", height: "100%", backgroundSize: "contain", display: "flex", alignItems: "center"}}>
             <div style={{color: "#fff", margin: "0 auto"}}>
                 <div style={{fontFamily: "Bigshot One", fontSize: "15em", fontWeight: "bold", lineHeight: "0.6"}}>404</div>
                 <div style={{fontFamily: "Bigshot One", fontSize: "4em", fontWeight: "bold", lineHeight: "1"}}>page not found</div>

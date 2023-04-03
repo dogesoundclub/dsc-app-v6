@@ -1,5 +1,4 @@
 import React from "react";
-import Modal from "../../components/modal/MobileModalPortal";
 import MobileNav from "../../components/mobile/MobileNav";
 import Dogesound from "../../components/mobile/Dogesound";
 import Fixed from "../../components/mobile/Fixed";
@@ -9,6 +8,7 @@ import Banner3 from "../../components/mobile/banner3";
 import { Alegreya_Sans } from "next/font/google"
 import Layout from "../../components/mobile/Layout";
 import Footer from "../../components/mobile/Footer";
+
 const alegreya_Sans = Alegreya_Sans({ 
   weight: '400',
   subsets: ['latin']
@@ -18,10 +18,9 @@ const alegreya_Sans_bold = Alegreya_Sans({
   subsets: ['latin']
 })
 
-const MobileHome = () => {
+export default function MobileHome() {
   return (
     <Layout>
-      <Modal></Modal>
       <div>
         <img src="dogesoundclub_mobile.png" style={{width: "100%"}}/>
       </div>
@@ -73,5 +72,3 @@ const MobileHome = () => {
     </Layout>
   );
 };
-
-export default MobileHome;
