@@ -28,7 +28,7 @@ export default function ActivitiesPage() {
             </div>
             <div style={{width: "100%"}} onMouseEnter={() => isShown1 ? setIsShown1(false) : setIsShown1(true)}>
               {!isShown1 && (
-                <img className="img" src="/activities_mobile/1.png" style={{width: "100%", height:"100%"}}/>
+                <img src="/activities_mobile/1.png" style={{width: "100%", height:"100%"}}/>
               )}
               {isShown1 && (
                 <img className="imghover" src="/activities_mobile/1hover.png" style={{width: "100%", height:"100%"}}/>
