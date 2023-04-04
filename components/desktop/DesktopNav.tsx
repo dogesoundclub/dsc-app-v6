@@ -1,21 +1,21 @@
-import React from 'react';
-import Link from 'next/link';
-import styles from '@/styles/desktop/DesktopNav.module.css';
-import { useState, useRef } from 'react'
+import React from "react";
+import Link from "next/link";
+import styles from "@/styles/desktop/DesktopNav.module.css";
+import { useState, useRef } from "react"
 
 // const navigation = [
-//   { name: 'about', href: '/about' },
-//   { name: 'gallery', href: '/gallery' },
-//   { name: 'board', href: '/board' },
-//   { name: 'activities', href: '/activities' },
-//   { name: 'FAQ', href: '/faq' }
+//   { name: "about", href: "/about" },
+//   { name: "gallery", href: "/gallery" },
+//   { name: "board", href: "/board" },
+//   { name: "activities", href: "/activities" },
+//   { name: "FAQ", href: "/faq" }
 // ];
 const navigation = [
-  { name: 'about', href: '/about' },
-  { name: 'gallery', href: '/ready' },
-  { name: 'board', href: '/ready' },
-  { name: 'activities', href: '/activities' },
-  { name: 'FAQ', href: '/ready' }
+  { name: "about", href: "/about" },
+  { name: "gallery", href: "/ready" },
+  { name: "board", href: "/ready" },
+  { name: "activities", href: "/activities" },
+  { name: "FAQ", href: "/ready" }
 ];
 
 export default function DesktopNav() {
@@ -34,7 +34,7 @@ export default function DesktopNav() {
 
   return (
       <nav className={styles.nav}>
-          <Link href='/about'><img src="./dogesoundclub.png" style={{height: "100px"}}/></Link>
+          <Link href="/about"><img src="./dogesoundclub.png" style={{ height: "100px" }}/></Link>
           <audio ref={audioRef}>
             <source src="./Caro.mp3" type="audio/mpeg" />
           </audio>
@@ -47,7 +47,7 @@ export default function DesktopNav() {
           </div>
         <ul className={styles.ul}>
           {navigation.map((item) => (
-          <li key={item.name} className={styles.li}><Link href={item.href} className={styles.link}>{item.name}</Link></li>
+          <li key={item.name} className={styles.li}><a href={item.href} className={styles.link}>{item.name}</a></li>
           ))}
         </ul>
       </nav>

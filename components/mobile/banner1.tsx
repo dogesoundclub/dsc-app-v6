@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Banner1() {
 
@@ -6,12 +6,12 @@ export default function Banner1() {
   const handleClose = () => setOpen(true);
 
   return open ? <></> :(
-    <div style={{maxWidth: "425px", top: "30%", position: "absolute", marginLeft: "15px"}}>
+    <div style={{ maxWidth: "425px", top: "30%", position: "absolute", marginLeft: "15px" }}>
       <div>
-          <div style={{background: "#00000080", fontSize: "15px", padding: "3px", textAlign: "right", width: "70%"}}>
-            <a onClick={handleClose} style={{color: "white"}}>X</a>
+          <div style={{ background: "#00000080", fontSize: "15px", padding: "3px", textAlign: "right", width: "70%" }}>
+            <a onClick={handleClose} style={{ color: "white" }}>X</a>
           </div>
-          <img src="/fbi_warning.png" style={{width: "70%"}}/>
+          <img src="/fbi_warning.png" style={{ width: "70%" }}/>
       </div>
     </div>
   );

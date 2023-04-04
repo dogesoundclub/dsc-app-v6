@@ -8,12 +8,12 @@ export default function Faq() {
     return (
         <Layout>
             <div>
-                <img src="dogesoundclub_mobile.png" style={{width: "100%"}}/>
+                <img src="dogesoundclub_mobile.png" style={{ width: "100%" }}/>
             </div>
             <Popup></Popup>
             <Dogesound></Dogesound>
             <MobileNav></MobileNav>
-            <div style={{color: "#36B167", fontSize: "30px", textDecoration: "underline", padding: "10px"}}>FAQ</div>
+            <div style={{ color: "#36B167", fontSize: "30px", textDecoration: "underline", padding: "10px" }}>FAQ</div>
             <img src="/faq/background.png" style={{width:"500px", position: "absolute", right: "300px"}}/>
             <div style={{margin: "10px", display: "flex", alignItems: "flex-start"}}>
                 <img src="/faq/1.png" style={{width: "70px", marginRight: "5px"}}/>

@@ -1,5 +1,5 @@
-import React from 'react';
-import DesktopNav from '@/components/desktop/DesktopNav';
+import React from "react";
+import DesktopNav from "@/components/desktop/DesktopNav";
 
 export default function DesktopHome() {
   return (

@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
-import styles from '@/styles/mobile/MobileNav.module.css';
+import React, { useState } from "react";
+import Link from "next/link";
+import styles from "@/styles/mobile/MobileNav.module.css";
 
 
 // const navigation = [
-//   { name: 'about', href: '/about' },
-//   { name: 'gallery', href: '/gallery' },
-//   { name: 'board', href: '/board' },
-//   { name: 'activities', href: '/activities' },
-//   { name: 'FAQ', href: '/faq' }
+//   { name: "about", href: "/about" },
+//   { name: "gallery", href: "/gallery" },
+//   { name: "board", href: "/board" },
+//   { name: "activities", href: "/activities" },
+//   { name: "FAQ", href: "/faq" }
 // ];
 
 const navigation = [
-  { name: 'about', href: '/' },
-  { name: 'gallery', href: '/ready' },
-  { name: 'board', href: '/ready' },
-  { name: 'activities', href: '/activities' },
-  { name: 'FAQ', href: '/ready' }
+  { name: "about", href: "/" },
+  { name: "gallery", href: "/ready" },
+  { name: "board", href: "/ready" },
+  { name: "activities", href: "/activities" },
+  { name: "FAQ", href: "/ready" }
 ];
 
 export default function MobileNav() {
@@ -35,7 +35,7 @@ export default function MobileNav() {
 };
 
 // {navigation.map((item) => {
-//   if(item.name == 'gallery') {
+//   if(item.name == "gallery") {
 //     return <>
 //             <li onClick={ ()=> {setNav(true)}} key={item.name} className={styles.li}>{item.name}</li>
 //             {nav === true ? <li onClick={()=>{setNav(false)}}>asd</li> : null}

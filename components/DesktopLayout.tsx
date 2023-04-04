@@ -1,8 +1,8 @@
-import DesktopNav from "./desktop/DesktopNav";
+import DesktopNav from "@/components/desktop/DesktopNav";
+import SidebarLeft from "@/components/desktop/SidebarLeft";
+import SidebarRight from "@/components/desktop/SidebarRight";
 
 type LayoutProps = {
-  user?: any
-  loading?: boolean
   children: React.ReactNode
 }
 
@@ -10,7 +10,13 @@ export default function DesktopLayout({ children }: LayoutProps){
   return (
     <>
       <DesktopNav />
-      {children}
+      <div style={{ display: "flex" }}>
+        <SidebarLeft></SidebarLeft>
+          <div style={{ flexBasis: "70%", background: "#fff", color: "#000", display: "flex", textAlign: "left" }}>
+            {children}
+          </div>
+        <SidebarRight></SidebarRight>
+      </div>
     </>
   );
 }
