@@ -16,7 +16,6 @@
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
-    "@types/styled-components": "^5.1.26",
     "caver-js": "^1.10.2",
     "dotenv": "^16.0.3",
     "eslint": "8.36.0",
@@ -25,7 +24,6 @@
     "openai": "^3.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.9",
     "typescript": "5.0.2",
     "xp.css": "^0.2.6"
   }

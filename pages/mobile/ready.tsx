@@ -1,6 +1,6 @@
 import React from 'react';
-import Dogesound from "../../components/mobile/Dogesound";
-import MobileNav from '../../components/mobile/MobileNav';
+import Dogesound from "@/components/mobile/Dogesound";
+import MobileNav from '@/components/mobile/MobileNav';
 import styles from '@/styles/mobile/Ready.module.css';
 import Link from 'next/link';
 

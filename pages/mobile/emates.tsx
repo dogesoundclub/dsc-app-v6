@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '@/styles/mobile/Gallery.module.css';
-import MobileNav from "../../components/mobile/MobileNav";
-import Dogesound from "../../components/mobile/Dogesound";
+import MobileNav from "@/components/mobile/MobileNav";
+import Dogesound from "@/components/mobile/Dogesound";
 
 export default function EmatesPage() {
   return (

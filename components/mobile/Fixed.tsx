@@ -1,13 +1,4 @@
 import { useState, useRef } from 'react'
-import styled from 'styled-components'
-
-const Box = styled.div`
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    right: 0;
-    background: #ffffff;
-`
 
 export default function Fixed() {
 
@@ -28,13 +19,13 @@ export default function Fixed() {
   };
 
   return open ? <>
-                    <Box>
+                    <div style={{display: "flex", position: "fixed", flexDirection: "column", right: 0, background: "#fff"}}>
                     {isPlaying ? (
                       <a onClick={handleStop}><img src="./stop.png"/></a>
                     ) : (
                       <a onClick={handlePlay}><img src="./musicBtn.png"/></a>
                     )}
-                  </Box>
+                  </div>
                 </> 
     :(
     <>
@@ -43,7 +34,7 @@ export default function Fixed() {
   </audio>
 
     <div style={{maxWidth: "425px"}}>
-      <Box>
+      <div style={{display: "flex", position: "fixed", flexDirection: "column", right: 0, background: "#fff"}}>
           <div>
             {isPlaying ? (
               <a onClick={handleStop}><img src="./stop.png" style={{width:"32px"}}/></a>
@@ -62,7 +53,7 @@ export default function Fixed() {
           <a href="https://www.youtube.com/@dosocl" target='_blank'><img src="/icon/youtube.png" style={{width: "32px"}}/></a>
           <a href="https://github.com/dogesoundclub" target='_blank'><img src="/icon/git.png" style={{width: "32px"}}/></a>
           <a href="https://opensea.io/collection/dogesoundclub-mates" target='_blank'><img src="/icon/opensea.png" style={{width: "32px"}}/></a>
-      </Box>
+      </div>
     </div>
     </>
   );
