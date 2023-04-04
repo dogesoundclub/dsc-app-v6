@@ -27,7 +27,7 @@ export default function MobileNav() {
       <nav className={styles.nav}>
         <ul className={styles.ul}>
           {navigation.map((item) => {
-              return <li key={item.name} className={styles.li}><Link href={item.href} className={styles.link}>{item.name}</Link></li>
+              return <li key={item.name} className={styles.li}><a href={item.href} className={styles.link}>{item.name}</a></li>
           })}
         </ul>
       </nav>
