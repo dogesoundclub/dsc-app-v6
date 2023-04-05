@@ -53,67 +53,142 @@ export default function ActivitiesPage() {
               display: "flex",
               alignContent: "flex-end",
               justifyContent: "flex-start",
-              height: "50px",
               alignItems: "flex-end",
+              flexDirection: "column",
             }}
           >
             <div
               style={{
-                color: "#36B167",
-                fontSize: "30px",
-                textDecoration: "underline",
-                paddingLeft: "40px",
+                display: "flex",
+                alignContent: "flex-end",
+                justifyContent: "flex-start",
+                height: "50px",
+                alignItems: "flex-end",
+                width: "100%",
+                fontFamily: "Audiowide",
               }}
             >
-              ACTIVITIES{" "}
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-around", background: "url(./activities/5.png)", padding: "10px", backgroundSize: "cover", color: "#fff", fontFamily: "Digital Numbers"}}>
-                <span className="dodo">OPEN YOUR UNIVERSE. DSC WILL WELCOME YOU.</span>
-            </div>
-            <div style={{display: "flex", justifyContent: "space-around"}}>
-                <a href={'#'}>
-                  <img src="/activities/0-0.png" style={{width: "100%"}}/>
-                </a>
-                <a href='https://dogesound.club/activities'>
-                  <img src="/activities/0-1.png" style={{width: "100%"}}/>
-                </a>
-                <a href='https://dogesound.club/activities'>
-                  <img src="/activities/0-2.png" style={{width: "100%"}}/>
-                </a>
-            </div>
-            <div style={{display: "flex", justifyContent: "space-around"}}>
-              <div style={{width: "100%"}} onMouseEnter={() => setIsShown1(true)} onMouseLeave={() => setIsShown1(false)}>
-              {!isShown1 && (
-                <img className="img" src="/activities/1.png" style={{width: "100%", height:"100%"}}/>
-              )}
-              {isShown1 && (
-                <img className="imghover" src="/activities/1hover.png" style={{width: "100%", height:"100%"}}/>
-              )}
+              <div
+                style={{
+                  color: "#36B167",
+                  fontSize: "30px",
+                  textDecoration: "underline",
+                  paddingLeft: "40px",
+                }}
+              >
+                ACTIVITIES{" "}
               </div>
-              <div style={{width: "100%"}} onMouseEnter={() => setIsShown2(true)} onMouseLeave={() => setIsShown2(false)}>
-              {!isShown2 && (
-                <img src="/activities/2.png" style={{width: "100%", height:"100%"}}/>
-              )}
-              {isShown2 && (
-                <img className="imghover" src="/activities/2hover.png" style={{width: "100%", height:"100%"}}/>
-              )}
+              <div style={{ fontFamily: "Abel", paddingLeft: "20px" }}>
+                We provide numerous contents that matches DSC&apos;s identity.
               </div>
             </div>
-            <div style={{display: "flex", justifyContent: "space-around"}}>
-              <div style={{width: "100%"}} onMouseEnter={() => setIsShown3(true)} onMouseLeave={() => setIsShown3(false)}>
-              {!isShown3 && (
-                <img src="/activities/3.png" style={{width: "100%", height:"100%"}}/>
-              )}
-              {isShown3 && (
-                <img className="imghover" src="/activities/3hover.png" style={{width: "100%", height:"100%"}}/>
-              )}
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                background: "url(./activities/5.png)",
+                padding: "10px",
+                backgroundSize: "cover",
+                color: "#fff",
+                fontFamily: "Digital Numbers",
+                width: "100%",
+              }}
+            >
+              <span className="dodo">
+                OPEN YOUR UNIVERSE. DSC WILL WELCOME YOU.
+              </span>
+            </div>
+            <div style={{ display: "flex", justifyContent: "space-around" }}>
+              <img src="/activities/0-0.png" style={{ width: "60%" }} />
+              <img
+                src="/activities/0-1.png"
+                style={{ width: "20%" }}
+                onClick={() => (location.href = identityURL("klaytn"))}
+              />
+              <img
+                src="/activities/0-2.png"
+                style={{ width: "20%" }}
+                onClick={() => (location.href = identityURL("hedera"))}
+              />
+            </div>
+            <div style={{ display: "flex", justifyContent: "space-around" }}>
+              <div
+                style={{ width: "100%" }}
+                onMouseEnter={() => setIsShown1(true)}
+                onMouseLeave={() => setIsShown1(false)}
+              >
+                {!isShown1 && (
+                  <img
+                    className="img"
+                    src="/activities/1.png"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                )}
+                {isShown1 && (
+                  <img
+                    className="imghover"
+                    src="/activities/1hover.png"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                )}
               </div>
-              <div style={{width: "100%"}} onMouseEnter={() => setIsShown4(true)} onMouseLeave={() => setIsShown4(false)}>
+              <div
+                style={{ width: "100%" }}
+                onMouseEnter={() => setIsShown2(true)}
+                onMouseLeave={() => setIsShown2(false)}
+              >
+                {!isShown2 && (
+                  <img
+                    src="/activities/2.png"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                )}
+                {isShown2 && (
+                  <img
+                    className="imghover"
+                    src="/activities/2hover.png"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                )}
+              </div>
+            </div>
+            <div style={{ display: "flex", justifyContent: "space-around" }}>
+              <div
+                style={{ width: "100%" }}
+                onMouseEnter={() => setIsShown3(true)}
+                onMouseLeave={() => setIsShown3(false)}
+              >
+                {!isShown3 && (
+                  <img
+                    src="/activities/3.png"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                )}
+                {isShown3 && (
+                  <img
+                    className="imghover"
+                    src="/activities/3hover.png"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                )}
+              </div>
+              <div
+                style={{ width: "100%" }}
+                onMouseEnter={() => setIsShown4(true)}
+                onMouseLeave={() => setIsShown4(false)}
+              >
                 {!isShown4 && (
-                  <img src="/activities/4.png" style={{width: "100%", height:"100%"}}/>
+                  <img
+                    src="/activities/4.png"
+                    style={{ width: "100%", height: "100%" }}
+                  />
                 )}
                 {isShown4 && (
-                  <img className="imghover" src="/activities/4hover.png" style={{width: "100%", height:"100%"}}/>
+                  <img
+                    className="imghover"
+                    src="/activities/4hover.png"
+                    style={{ width: "100%", height: "100%" }}
+                  />
                 )}
               </div>
             </div>
