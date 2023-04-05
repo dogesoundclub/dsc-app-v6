@@ -9,6 +9,22 @@ import Layout from "@/components/mobile/Layout";
 import Footer from "@/components/mobile/Footer";
 
 
+// const alegreya_Sans = Alegreya_Sans({
+//   weight: '400',
+//   subsets: ['latin']
+// })
+// const alegreya_Sans_bold = Alegreya_Sans({
+//   weight: '800',
+//   subsets: ['latin']
+// })
+const alegreya_Sans = {
+  fontFamily: "Alegreya Sans",
+  fontWeight: "400",
+};
+const alegreya_Sans_bold = {
+  fontFamily: "Alegreya Sans",
+  fontWeight: "800",
+};
 export default function About() {
   return (
     <Layout>
@@ -125,4 +141,4 @@ export default function About() {
       </div>
     </Layout>
   );
-};
+}

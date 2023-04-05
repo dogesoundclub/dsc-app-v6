@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import styles from "@/styles/desktop/DesktopNav.module.css";
-import { useState, useRef } from "react"
+import { useState, useRef } from "react";
+import { useRouter } from "next/router";
 
 // const navigation = [
 //   { name: "about", href: "/about" },
@@ -21,6 +22,7 @@ const navigation = [
 export default function DesktopNav() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const router = useRouter();
 
   const handlePlay = () => {
     audioRef.current?.play();
@@ -52,4 +54,4 @@ export default function DesktopNav() {
         </ul>
       </nav>
   );
-};
+}
