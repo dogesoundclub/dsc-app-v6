@@ -1,6 +1,6 @@
 import { create } from "zustand";
-type VerifyResult = "ready" | "success" | "fail";
-type VerifyNetwork = "hedera" | "klaytn";
+export type VerifyResult = "ready" | "success" | "fail";
+export type VerifyNetwork = "hedera" | "klaytn";
 type VerifyStore = {
   modal: boolean;
   result: VerifyResult;

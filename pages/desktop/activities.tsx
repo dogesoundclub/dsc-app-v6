@@ -24,9 +24,11 @@ export default function ActivitiesPage() {
     if (code && typeof code == "string" && network) {
       if (network === "klaytn") {
         getKlaytnMsg(code).then((res) => {
+          // console.log(res);
           if (res) hook.setResult("success", "klaytn");
+          else hook.setResult("fail", "klaytn");
         });
-      } else if (network === "hedera") getHederaMsg();
+      } else if (network === "hedera") getHederaMsg(code, hook.setResult);
     }
     // setVerifyMsg({ state: "select", msg: "네트워크 선택" });
     // if (code && typeof code === "string" && address)
