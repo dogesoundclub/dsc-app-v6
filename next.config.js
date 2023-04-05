@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const withTM = require("next-transpile-modules")(["hashconnect"]);
 const nextConfig = {
   reactStrictMode: true,
   webpack5: true,
@@ -6,6 +7,6 @@ const nextConfig = {
     config.resolve.fallback = { fs: false };
     return config;
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = withTM(nextConfig);
