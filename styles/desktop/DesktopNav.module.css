@@ -5,7 +5,7 @@
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: calc(100vh * (100 / 930));
-  background: linear-gradient( to bottom, #646464 30%, #ffffff88 50%, #646464 70%);
+  background: linear-gradient( to bottom, #646464 30%, #ffffff 50%, #646464 70%);
 }
 .ul{
   display: flex;
