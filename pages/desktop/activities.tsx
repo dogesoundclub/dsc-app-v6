@@ -8,12 +8,14 @@ import { identityURL, redirectURI } from "@/components/utils/discord";
 import { getHederaMsg, getKlaytnMsg } from "@/services/discord";
 import XPPage from "@/components/xp";
 import { verifyStore } from "@/stores/verify.store";
+import HashPackPairModal from "@/components/modal/HashPackPairModal";
 
 export default function ActivitiesPage() {
   const [isShown1, setIsShown1] = useState(false);
   const [isShown2, setIsShown2] = useState(false);
   const [isShown3, setIsShown3] = useState(false);
   const [isShown4, setIsShown4] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const router = useRouter();
   const hook = verifyStore();
@@ -24,9 +26,12 @@ export default function ActivitiesPage() {
     if (code && typeof code == "string" && network) {
       if (network === "klaytn") {
         getKlaytnMsg(code).then((res) => {
+          // console.log(res);
           if (res) hook.setResult("success", "klaytn");
+          else hook.setResult("fail", "klaytn");
         });
-      } else if (network === "hedera") getHederaMsg();
+      } else if (network === "hedera") setOpen(true);
+      // getHederaMsg(code, hook.setResult, hook.setPairingString);
     }
     // setVerifyMsg({ state: "select", msg: "네트워크 선택" });
     // if (code && typeof code === "string" && address)
@@ -36,6 +41,7 @@ export default function ActivitiesPage() {
   return (
     <MainLayout>
       <XPPage />
+      <HashPackPairModal open={open} setOpen={setOpen} code={code} />
       <div style={{ display: "flex" }}>
         <SidebarLeft></SidebarLeft>
         <div
