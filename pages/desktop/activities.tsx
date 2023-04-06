@@ -2,18 +2,19 @@ import MainLayout from "../../components/MainLayout";
 import SidebarLeft from "../../components/desktop/SidebarLeft";
 import SidebarRight from "../../components/desktop/SidebarRight";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { identityURL, redirectURI } from "@/components/utils/discord";
 import { getHederaMsg, getKlaytnMsg } from "@/services/discord";
 import XPPage from "@/components/xp";
 import { verifyStore } from "@/stores/verify.store";
+import Hederapopup from "@/components/hederapopup";
 
 export default function ActivitiesPage() {
   const [isShown1, setIsShown1] = useState(false);
   const [isShown2, setIsShown2] = useState(false);
   const [isShown3, setIsShown3] = useState(false);
   const [isShown4, setIsShown4] = useState(false);
+  const [showHederapopup, setShowHederapopup] = useState(false);
 
   const router = useRouter();
   const hook = verifyStore();
@@ -110,8 +111,10 @@ export default function ActivitiesPage() {
               <img
                 src="/activities/0-2.png"
                 style={{ width: "20%" }}
-                onClick={() => (location.href = identityURL("hedera"))}
+                // onClick={() => (location.href = identityURL("hedera"))}
+                onClick={() => setShowHederapopup(!showHederapopup)}
               />
+              { showHederapopup && <Hederapopup/> }
             </div>
             <div style={{ display: "flex", justifyContent: "space-around" }}>
               <div
