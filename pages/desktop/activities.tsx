@@ -8,6 +8,7 @@ import { getHederaMsg, getKlaytnMsg } from "@/services/discord";
 import XPPage from "@/components/xp";
 import { verifyStore } from "@/stores/verify.store";
 import Hederapopup from "@/components/hederapopup";
+import WalletList from "@/components/popup/WalletList";
 
 export default function ActivitiesPage() {
   const [isShown1, setIsShown1] = useState(false);
@@ -39,6 +40,7 @@ export default function ActivitiesPage() {
   return (
     <MainLayout>
       <XPPage />
+      <WalletList />
       <div style={{ display: "flex" }}>
         <SidebarLeft></SidebarLeft>
         <div
