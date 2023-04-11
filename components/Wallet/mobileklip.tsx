@@ -10,23 +10,24 @@ export async function connect(): Promise<any> {
     //     body: data,
     // });
     const res = await klipSDK.prepare.auth({ bappName: "DogeSoundClub" });
+    // klipSDK.web2app({
+    //     urlScheme: `kakaotalk://klipwallet/open?url=https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`,
+    // })
     // const res = await response.json();
-    await klipSDK.request(res, async () => {
-        console.log(res);
-        window.open(`klip://klipwallet/open?url=https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`);
-        return new Promise((resolve) => {
+    // await klipSDK.request(res, async () => {
+    //     console.log(res);
+    //     window.open(`klipwallet/open?url=https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`);
+    //     return new Promise((resolve) => {
             const interval = setInterval(async () => {
                 const result = await klipSDK.getResult(res.request_key);
                 console.log(result)
                 if (result.result !== undefined) {
                     clearInterval(interval);
-                    setTimeout(() => resolve(result.result), 2000);
                     sessionStorage.setItem('klaytn_address', result.result.klaytn_address);
-                    location.reload();
                 }
             }, 1000);
-        });
-    });
+    //     });
+    // });
 }
 
 export async function getMobileKlip() {
