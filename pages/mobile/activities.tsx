@@ -8,6 +8,7 @@ import { verifyStore } from "@/stores/verify.store";
 import { identityURL, redirectURI } from "@/components/utils/discord";
 import { getHederaMsg, getKlaytnMsg } from "@/services/discord";
 import WalletList from "@/components/popup/WalletList";
+import XPPage from "@/components/xp";
 
 export default function ActivitiesPage() {
   const [isShown1, setIsShown1] = useState(false);
@@ -53,6 +54,7 @@ export default function ActivitiesPage() {
       </div>
       <Dogesound></Dogesound>
       <Navbar></Navbar>
+      <XPPage />
       {klaytnAddress && <WalletList />}
       <img src="/activities_mobile/0.png" style={{ width: "100%" }} />
       <div style={{ display: "flex", justifyContent: "space-around" }}>
