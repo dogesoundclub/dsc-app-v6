@@ -69,12 +69,13 @@ export default function WalletList() {
               </button>
             </section>
           } 
+          { !useIsMobile() && 
             <section className="field-row" style={{ justifyContent: "center" }}>
               <button style={{ color: "#000000" }} onClick={klip}>
                   Connect to Klip
               </button>
             </section>
-          
+          }
           {/* <section className="field-row" style={{ justifyContent: "center" }}>
             <button style={{ color: "#000000" }} onClick={Metamask}>
                 Connect to Metamask

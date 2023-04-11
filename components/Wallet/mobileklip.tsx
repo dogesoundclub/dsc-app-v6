@@ -1,10 +1,16 @@
-import QRCode from "qrcode";
-
 export async function connect(): Promise<any> {
     const klipSDK = require("klip-sdk");
-    const res = await klipSDK.prepare.auth({ bappName: "DogeSoundClub" });
+    const url = 'https://a2a-api.klipwallet.com/v2/a2a/prepare';
+    const data = '{"bapp": { "name" : "DogeSoundClub" }, "callback": { "success": "https://dogesound.club/activities", "fail": "https://dogesound.club/activities" }, "type": "auth" }';
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: data,
+    });
+    const res = await response.json();
     await klipSDK.request(res, async () => {
-        const qr = await QRCode.toDataURL(`kakaotalk://klipwallet/open?url=https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`);
         return new Promise((resolve) => {
             const interval = setInterval(async () => {
                 const result = await klipSDK.getResult(res.request_key);
