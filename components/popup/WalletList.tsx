@@ -2,7 +2,9 @@ import "xp.css/dist/XP.css";
 import { useState, useEffect } from "react";
 import { getkaikas } from "../Wallet/kaikas";
 import { getKlip } from "../Wallet/klip";
+import { getMobileKlip } from "../Wallet/mobileklip";
 import { getMetamask } from "../Wallet/metamask";
+import useIsMobile from "@/hooks/display";
 
 export default function WalletList() {
   const [open, setOpen] = useState(true);
@@ -15,6 +17,10 @@ export default function WalletList() {
     }
   }
 
+  function Mobileklip(){
+    // const data = getKlip();
+    getMobileKlip();
+  }
   function klip(){
     // const data = getKlip();
     getKlip();
@@ -56,11 +62,19 @@ export default function WalletList() {
                 Connect to Kaikas
             </button>
           </section>
-          <section className="field-row" style={{ justifyContent: "center" }}>
-            <button style={{ color: "#000000" }} onClick={klip}>
-                Connect to Klip
-            </button>
-          </section>
+          { useIsMobile() && 
+            <section className="field-row" style={{ justifyContent: "center" }}>
+              <button style={{ color: "#000000" }} onClick={Mobileklip}>
+                  Connect to MobileKlip
+              </button>
+            </section>
+          } 
+            <section className="field-row" style={{ justifyContent: "center" }}>
+              <button style={{ color: "#000000" }} onClick={klip}>
+                  Connect to Klip
+              </button>
+            </section>
+          
           {/* <section className="field-row" style={{ justifyContent: "center" }}>
             <button style={{ color: "#000000" }} onClick={Metamask}>
                 Connect to Metamask
