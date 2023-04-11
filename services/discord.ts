@@ -57,6 +57,7 @@ export async function getKlaytnMsg(code: string) {
       return false;
     }
   } else {
+    //클립지갑
     try {
       const get = await axios.get(
         `https://api.dogesound.club/discord/token?code=${code}&redirect_uri=${redirectURI}?network=klaytn%26`,

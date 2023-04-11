@@ -7,12 +7,14 @@ import { useRouter } from "next/router";
 import { verifyStore } from "@/stores/verify.store";
 import { identityURL, redirectURI } from "@/components/utils/discord";
 import { getHederaMsg, getKlaytnMsg } from "@/services/discord";
+import WalletList from "@/components/popup/WalletList";
 
 export default function ActivitiesPage() {
   const [isShown1, setIsShown1] = useState(false);
   const [isShown2, setIsShown2] = useState(false);
   const [isShown3, setIsShown3] = useState(false);
   const [isShown4, setIsShown4] = useState(false);
+  const [klaytnAddress, setKlaytnAddress] = useState(true);
 
   const router = useRouter();
   const hook = verifyStore();
@@ -32,7 +34,10 @@ export default function ActivitiesPage() {
     // setVerifyMsg({ state: "select", msg: "네트워크 선택" });
     // if (code && typeof code === "string" && address)
     //   getUserInfo(code, address).then((res) => setInit(res));
-
+    const storedKlaytnAddress = sessionStorage.getItem('klaytn_address');
+    if (storedKlaytnAddress) {
+      setKlaytnAddress(false);
+    }
   }, [router.isReady, code, error]);
 
   return (
@@ -48,6 +53,7 @@ export default function ActivitiesPage() {
       </div>
       <Dogesound></Dogesound>
       <Navbar></Navbar>
+      {klaytnAddress && <WalletList />}
       <img src="/activities_mobile/0.png" style={{ width: "100%" }} />
       <div style={{ display: "flex", justifyContent: "space-around" }}>
         <img
