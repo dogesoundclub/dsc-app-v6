@@ -56,6 +56,45 @@ export async function getKlaytnMsg(code: string) {
       console.log(err);
       return false;
     }
+  } else {
+    try {
+      const get = await axios.get(
+        `https://api.dogesound.club/discord/token?code=${code}&redirect_uri=${redirectURI}?network=klaytn%26`,
+        {
+          headers: {
+            Accept: "*/*",
+          },
+        }
+      );
+      const me = await axios.get(
+        `https://api.dogesound.club/discord/me?code=${code}`
+      );
+      const res = await axios.post(
+        "https://api.dogesound.club/checkholder",
+        JSON.stringify({
+          signedMessage: sessionStorage.getItem('klaytn_address'),
+          code,
+          address: sessionStorage.getItem('klaytn_address'),
+        }),
+        {
+          headers: {
+            Accept: "*/*",
+            "Content-Type": "text/plain;charset=UTF-8",
+          },
+        }
+      );
+      const { data } = res;
+      console.log(data);
+      let verified = false;
+      for (let key in data) {
+        if (data[key]) verified = true;
+      }
+      return verified;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+
   }
 }
 

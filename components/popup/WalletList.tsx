@@ -1,7 +1,7 @@
 import "xp.css/dist/XP.css";
 import { useState, useEffect } from "react";
 import { getkaikas } from "../Wallet/kaikas";
-import { getKlip, connect } from "../Wallet/klip";
+import { getKlip } from "../Wallet/klip";
 import { getMetamask } from "../Wallet/metamask";
 
 export default function WalletList() {
@@ -17,7 +17,7 @@ export default function WalletList() {
 
   function klip(){
     // const data = getKlip();
-    connect();
+    getKlip();
   }
   
   function Metamask(){

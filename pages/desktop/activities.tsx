@@ -16,6 +16,7 @@ export default function ActivitiesPage() {
   const [isShown3, setIsShown3] = useState(false);
   const [isShown4, setIsShown4] = useState(false);
   const [showHederapopup, setShowHederapopup] = useState(false);
+  const [klaytnAddress, setKlaytnAddress] = useState(true);
 
   const router = useRouter();
   const hook = verifyStore();
@@ -35,12 +36,16 @@ export default function ActivitiesPage() {
     // setVerifyMsg({ state: "select", msg: "네트워크 선택" });
     // if (code && typeof code === "string" && address)
     //   getUserInfo(code, address).then((res) => setInit(res));
+    const storedKlaytnAddress = sessionStorage.getItem('klaytn_address');
+    if (storedKlaytnAddress) {
+      setKlaytnAddress(false);
+    }
   }, [router.isReady, code, error]);
 
   return (
     <MainLayout>
       <XPPage />
-      <WalletList />
+      {klaytnAddress && <WalletList />}
       <div style={{ display: "flex" }}>
         <SidebarLeft></SidebarLeft>
         <div
