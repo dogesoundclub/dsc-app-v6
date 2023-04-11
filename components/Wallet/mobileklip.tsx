@@ -1,17 +1,19 @@
 export async function connect(): Promise<any> {
     const klipSDK = require("klip-sdk");
-    const url = 'https://a2a-api.klipwallet.com/v2/a2a/prepare';
-    const data = '{"bapp": { "name" : "DogeSoundClub" }, "callback": { "success": "https://dogesound.club/activities", "fail": "https://dogesound.club/activities" }, "type": "auth" }';
-    const response = await fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: data,
-    });
-    const res = await response.json();
+    // const url = 'https://a2a-api.klipwallet.com/v2/a2a/prepare';
+    // const data = '{"bapp": { "name" : "DogeSoundClub" }, "callback": { "success": "https://dogesound.club/activities", "fail": "https://dogesound.club/activities" }, "type": "auth" }';
+    // const response = await fetch(url, {
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //     },
+    //     body: data,
+    // });
+    const res = await klipSDK.prepare.auth({ bappName: "DogeSoundClub" });
+    // const res = await response.json();
     await klipSDK.request(res, async () => {
-        window.open(`kakaotalk://klipwallet/open?url=https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`);
+        console.log(res);
+        window.open(`klip://klipwallet/open?url=https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`);
         return new Promise((resolve) => {
             const interval = setInterval(async () => {
                 const result = await klipSDK.getResult(res.request_key);
