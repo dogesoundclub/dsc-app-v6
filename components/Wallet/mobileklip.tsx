@@ -11,6 +11,7 @@ export async function connect(): Promise<any> {
     });
     const res = await response.json();
     await klipSDK.request(res, async () => {
+        window.open(`kakaotalk://klipwallet/open?url=https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`);
         return new Promise((resolve) => {
             const interval = setInterval(async () => {
                 const result = await klipSDK.getResult(res.request_key);
