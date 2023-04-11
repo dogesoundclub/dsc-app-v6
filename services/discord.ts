@@ -72,7 +72,7 @@ export async function getKlaytnMsg(code: string) {
       const res = await axios.post(
         "https://api.dogesound.club/checkholder",
         JSON.stringify({
-          signedMessage: sessionStorage.getItem('klaytn_address'),
+          klipAddress: sessionStorage.getItem('klaytn_address'),
           code,
           address: sessionStorage.getItem('klaytn_address'),
         }),
