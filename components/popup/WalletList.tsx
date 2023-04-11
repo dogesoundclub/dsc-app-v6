@@ -4,14 +4,14 @@ import { getkaikas } from "../Wallet/kaikas";
 import { getKlip, connect } from "../Wallet/klip";
 import { getMetamask } from "../Wallet/metamask";
 
-export default function XPPage() {
+export default function WalletList() {
   const [open, setOpen] = useState(true);
   const handleClose = () => setOpen(false);
   
   async function kaikas(){
     const kaikas = await getkaikas();
     if(kaikas) {
-      setOpen(false)
+      setOpen(false);
     }
   }
 
