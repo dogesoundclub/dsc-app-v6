@@ -1,4 +1,4 @@
-import{ useState, useEffect } from "react";
+import{ useState, useEffect, useLayoutEffect } from "react";
 
 export default function useIsMobile() {
     const [isMobile, setIsMobile] = useState(false);
@@ -12,4 +12,15 @@ export default function useIsMobile() {
         }
         }, []);
         return isMobile;
+
+    // useLayoutEffect(() => {
+    //     const userAgent = navigator.userAgent || navigator.vendor;
+    //     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent)) {
+    //         setIsMobile(true);
+    //     } else {
+    //         setIsMobile(false);
+    //     }
+    // }, []);
+    // return isMobile;
+        
 }

@@ -1,34 +1,16 @@
 export async function connect(): Promise<any> {
     const klipSDK = require("klip-sdk");
-    // const url = 'https://a2a-api.klipwallet.com/v2/a2a/prepare';
-    // const data = '{"bapp": { "name" : "DogeSoundClub" }, "callback": { "success": "https://dogesound.club/activities", "fail": "https://dogesound.club/activities" }, "type": "auth" }';
-    // const response = await fetch(url, {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    //     body: data,
-    // });
-    const res = await klipSDK.prepare.auth({ bappName: "DogeSoundClub" });
-    // klipSDK.web2app({
-    //     urlScheme: `kakaotalk://klipwallet/open?url=https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`,
-    // })
-    // const res = await response.json();
-    // await klipSDK.request(res, async () => {
-    //     console.log(res);
-    //     window.open(`klipwallet/open?url=https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`);
-    //     return new Promise((resolve) => {
-            window.open(`https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`);
-            const interval = setInterval(async () => {
-                const result = await klipSDK.getResult(res.request_key);
-                console.log(result)
-                if (result.result !== undefined) {
-                    clearInterval(interval);
-                    sessionStorage.setItem('klaytn_address', result.result.klaytn_address);
-                }
-            }, 1000);
-    //     });
-    // });
+    const res = await klipSDK.prepare.auth({ bappName: "DogeSoundClub", successLink: "https://dogesound.club/activities", failLink: "https://dogesound.club/activities" });
+    window.open(`https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`);
+    const interval = setInterval(async () => {
+        const result = await klipSDK.getResult(res.request_key);
+        console.log(result)
+        if (result.result !== undefined) {
+            clearInterval(interval);
+            sessionStorage.setItem('klaytn_address', result.result.klaytn_address);
+            location.reload();
+        }
+    }, 1000);
 }
 
 export async function getMobileKlip() {

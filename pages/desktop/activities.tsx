@@ -113,7 +113,7 @@ export default function ActivitiesPage() {
               <img
                 src="/activities/0-1.png"
                 style={{ width: "20%" }}
-                onClick={() => (location.href = identityURL("klaytn"))}
+                onClick={() => (klaytnAddress ? setKlaytnAddress(true) : location.href = identityURL("klaytn"))}
               />
               <img
                 src="/activities/0-2.png"
