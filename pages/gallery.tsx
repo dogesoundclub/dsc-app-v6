@@ -1,8 +1,10 @@
 import DesktopGallery from "./desktop/mates";
 import MobileGallery from "./mobile/mates";
-import useIsMobile from "@/hooks/display";
+import type { Props } from "next/app";
+import { device } from '../util/device';
 
-export default function GalleryPage() {
-  const display = useIsMobile();
-  return display ? <MobileGallery /> : <DesktopGallery />;
+export default function GalleryPage( { isMobile }: Props) {
+  return isMobile ? <MobileGallery /> : <DesktopGallery />;
 };
+
+export const getServerSideProps = device;

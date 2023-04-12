@@ -1,8 +1,10 @@
 import DesktopBmcs from "./desktop/bmcs";
 import MobileReady from "./mobile/ready";
-import useIsMobile from "../hooks/display";
+import type { Props } from "next/app";
+import { device } from '../util/device';
 
-export default function BmcsPage() {
-  const display = useIsMobile();
-  return display ? <MobileReady /> : <DesktopBmcs/>;
+export default function BmcsPage({ isMobile }: Props) {
+  return isMobile ? <MobileReady /> : <DesktopBmcs/>;
 };
+
+export const getServerSideProps = device;

@@ -1,8 +1,10 @@
 import DesktopError from "./desktop/_error";
 import MobileError from "./mobile/_error";
-import useIsMobile from "@/hooks/display";
+import type { Props } from "next/app";
+import { device } from '../util/device';
 
-export default function PageError() {
-    const display = useIsMobile();
-    return display ? <MobileError /> : <DesktopError />;
+export default function PageError({ isMobile }: Props) {
+    return isMobile ? <MobileError /> : <DesktopError />;
   };
+
+  export const getServerSideProps = device;

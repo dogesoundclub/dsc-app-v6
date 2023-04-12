@@ -1,8 +1,10 @@
 import DesktopAbout from "./desktop/about";
 import MobileAbout from "./mobile/about";
-import useIsMobile from "@/hooks/display";
+import type { Props } from "next/app";
+import { device } from '../util/device';
 
-export default function AboutPage() {
-  const display = useIsMobile();
-  return display ? <MobileAbout /> : <DesktopAbout />;
+export default function AboutPage({ isMobile }: Props) {
+  return isMobile ? <MobileAbout /> : <DesktopAbout />;
 };
+
+export const getServerSideProps = device;

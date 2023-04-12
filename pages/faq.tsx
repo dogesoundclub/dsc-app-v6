@@ -1,8 +1,10 @@
 import DesktopFaq from "./desktop/faq";
 import MobileFaq from "./mobile/faq";
-import useIsMobile from "@/hooks/display";
+import type { Props } from "next/app";
+import { device } from '../util/device';
 
-export default function Index() {
-  const display = useIsMobile();
-  return display ? <MobileFaq /> : <DesktopFaq />;
+export default function Index({ isMobile }: Props) {
+  return isMobile ? <MobileFaq /> : <DesktopFaq />;
 }
+
+export const getServerSideProps = device;
