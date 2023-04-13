@@ -9,6 +9,7 @@ import XPPage from "@/components/xp";
 import { verifyStore } from "@/stores/verify.store";
 import Hederapopup from "@/components/hederapopup";
 import WalletList from "@/components/popup/WalletList";
+import { useStore } from "@/components/utils/State";
 
 export default function ActivitiesPage() {
   const [isShown1, setIsShown1] = useState(false);
@@ -17,6 +18,11 @@ export default function ActivitiesPage() {
   const [isShown4, setIsShown4] = useState(false);
   const [showHederapopup, setShowHederapopup] = useState(false);
   const [klaytnAddress, setKlaytnAddress] = useState(true);
+  const abc = useStore();
+
+  function main(){
+    abc.setView(false);
+  }
 
   const router = useRouter();
   const hook = verifyStore();
@@ -37,15 +43,13 @@ export default function ActivitiesPage() {
     // if (code && typeof code === "string" && address)
     //   getUserInfo(code, address).then((res) => setInit(res));
     const storedKlaytnAddress = sessionStorage.getItem('klaytn_address');
-    if (storedKlaytnAddress) {
-      setKlaytnAddress(false);
-    }
+    if (storedKlaytnAddress) { setKlaytnAddress(false); }
   }, [router.isReady, code, error]);
 
   return (
     <MainLayout>
       <XPPage />
-      {klaytnAddress && <WalletList />}
+      <WalletList />
       <div style={{ display: "flex" }}>
         <SidebarLeft></SidebarLeft>
         <div

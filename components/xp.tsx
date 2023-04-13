@@ -1,5 +1,4 @@
 import { verifyStore } from "@/stores/verify.store";
-import "xp.css/dist/XP.css";
 
 export default function XPPage() {
   const hook = verifyStore();
