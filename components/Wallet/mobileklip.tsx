@@ -7,7 +7,7 @@ export async function connect(): Promise<any> {
         console.log(result)
         if (result.result !== undefined) {
             clearInterval(interval);
-            sessionStorage.setItem('klaytn_address', result.result.klaytn_address);
+            sessionStorage.setItem('klaytn_klip_address', result.result.klaytn_address);
             location.reload();
         }
     }, 1000);

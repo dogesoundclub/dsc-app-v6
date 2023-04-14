@@ -35,7 +35,7 @@ export default function ActivitiesPage() {
     // setVerifyMsg({ state: "select", msg: "네트워크 선택" });
     // if (code && typeof code === "string" && address)
     //   getUserInfo(code, address).then((res) => setInit(res));
-    const storedKlaytnAddress = sessionStorage.getItem('klaytn_address');
+    const storedKlaytnAddress = sessionStorage.getItem('klaytn_klip_address');
     if (storedKlaytnAddress) {
       setKlaytnAddress(false);
     }
