@@ -6,3 +6,8 @@ declare module 'next/app' {
         isMobile: boolean;
     }
 }
+declare global {
+    interface Window {
+        klaytn?: any;
+    }
+}

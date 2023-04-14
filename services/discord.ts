@@ -11,7 +11,8 @@ declare global {
 }
 
 export async function getKlaytnMsg(code: string) {
-  if (window.klaytn) {
+  const klaytn_kaikas_address = sessionStorage.getItem('klaytn_kaikas_address');
+  if (klaytn_kaikas_address) {
     try {
       const klaytn = await window.klaytn.enable();
       const caver = new Caver(window.klaytn);
@@ -73,9 +74,9 @@ export async function getKlaytnMsg(code: string) {
       const res = await axios.post(
         "https://api.dogesound.club/checkholder",
         JSON.stringify({
-          klipAddress: sessionStorage.getItem('klaytn_address'),
+          klipAddress: sessionStorage.getItem('klaytn_klip_address'),
           code,
-          address: sessionStorage.getItem('klaytn_address'),
+          address: sessionStorage.getItem('klaytn_klip_address'),
         }),
         {
           headers: {

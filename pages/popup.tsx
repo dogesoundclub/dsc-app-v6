@@ -1,5 +1,5 @@
-import WalletList from "@/components/popup/WalletList";
+import Wallet from "@/components/popup/Wallet";
 
 export default function Popup() {
-  return <WalletList />;
+  return <Wallet />;
 }
