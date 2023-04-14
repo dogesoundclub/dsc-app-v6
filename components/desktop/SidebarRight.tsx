@@ -1,26 +1,36 @@
 import { useEffect, useState } from "react";
-import WalletList from "@/components/popup/WalletList";
-import { useStore } from "@/components/utils/State";
+import Wallet from "@/components/popup/Wallet";
+import { useStateStore } from "@/components/utils/StateStore";
 
 export default function SidebarRight() {
     const [klaytnAddress, setKlaytnAddress] = useState(false);
-    const abc = useStore();
+    const [address, setAddress] = useState('');
+    const StateStore = useStateStore();
 
-    function main(){
-        abc.setView(false);
-      }
+    function WalletPopup(){
+        StateStore.setView(false);
+    }
+
+    function sessionRemove(){
+        sessionStorage.removeItem('klaytn_klip_address');
+        sessionStorage.removeItem('klaytn_kaikas_address');
+        location.reload();
+    }
 
     useEffect(() => {
-        const storedKlaytnAddress = sessionStorage.getItem('klaytn_address');
-        if (storedKlaytnAddress) {
-            setKlaytnAddress(false);
+        const klaytn_klip_address = sessionStorage.getItem('klaytn_klip_address');
+        const klaytn_kaikas_address = sessionStorage.getItem('klaytn_kaikas_address');
+        if (klaytn_klip_address || klaytn_kaikas_address) {
+            setKlaytnAddress(true);
+            if(klaytn_klip_address) setAddress(klaytn_klip_address);
+            if(klaytn_kaikas_address) setAddress(klaytn_kaikas_address);
         }
     }, []);
     return (
         <div style={{ width: "15%", textAlign: "center", background: "#C1C1C1", zIndex: "2" }}>
-            <WalletList></WalletList>
+            <Wallet></Wallet>
             <div>
-            <a onClick={main} target="_blank"><img src="/login.png" style={{ width: "100%" }}/></a>
+            { klaytnAddress ? <>{ address } <a onClick={ sessionRemove }>Logout</a></> : <a onClick={ WalletPopup } target="_blank"><img src="/login.png" style={{ width: "100%" }}/></a> }
             </div>
             <div style={{padding: "10px"}}>
                 <a href="https://discord.gg/dogesoundclub" target="_blank"><img src="/banner.gif" style={{ width: "100%" }}/></a>

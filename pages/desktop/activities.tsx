@@ -8,8 +8,8 @@ import { getHederaMsg, getKlaytnMsg } from "@/services/discord";
 import XPPage from "@/components/xp";
 import { verifyStore } from "@/stores/verify.store";
 import Hederapopup from "@/components/hederapopup";
-import WalletList from "@/components/popup/WalletList";
-import { useStore } from "@/components/utils/State";
+import WalletList from "@/components/popup/Wallet";
+import { useStateStore } from "@/components/utils/StateStore";
 
 export default function ActivitiesPage() {
   const [isShown1, setIsShown1] = useState(false);
@@ -18,10 +18,11 @@ export default function ActivitiesPage() {
   const [isShown4, setIsShown4] = useState(false);
   const [showHederapopup, setShowHederapopup] = useState(false);
   const [klaytnAddress, setKlaytnAddress] = useState(true);
-  const abc = useStore();
 
-  function main(){
-    abc.setView(false);
+  const StateStore = useStateStore();
+
+  function WalletPopup(){
+    StateStore.setView(false);
   }
 
   const router = useRouter();
@@ -42,8 +43,9 @@ export default function ActivitiesPage() {
     // setVerifyMsg({ state: "select", msg: "네트워크 선택" });
     // if (code && typeof code === "string" && address)
     //   getUserInfo(code, address).then((res) => setInit(res));
-    const storedKlaytnAddress = sessionStorage.getItem('klaytn_address');
-    if (storedKlaytnAddress) { setKlaytnAddress(false); }
+    const klaytn_klip_address = sessionStorage.getItem('klaytn_klip_address');
+    const klaytn_kaikas_address = sessionStorage.getItem('klaytn_kaikas_address');
+    if (klaytn_klip_address || klaytn_kaikas_address) { setKlaytnAddress(false); }
   }, [router.isReady, code, error]);
 
   return (
@@ -117,7 +119,8 @@ export default function ActivitiesPage() {
               <img
                 src="/activities/0-1.png"
                 style={{ width: "20%" }}
-                onClick={() => (klaytnAddress ? setKlaytnAddress(true) : location.href = identityURL("klaytn"))}
+                // onClick={() => (klaytnAddress ? setKlaytnAddress(true) : location.href = identityURL("klaytn"))}
+                onClick={() => klaytnAddress ? WalletPopup() : location.href = identityURL("klaytn")}
               />
               <img
                 src="/activities/0-2.png"

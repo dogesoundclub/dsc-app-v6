@@ -1,6 +1,6 @@
 import "xp.css/dist/XP.css";
 import { useState, useEffect } from "react";
-import { getkaikas } from "../Wallet/kaikas";
+import { kaikasConnect } from "../Wallet/kaikas";
 import { getMobileKlip } from "../Wallet/mobileklip";
 import { getMetamask } from "../Wallet/metamask";
 
@@ -10,10 +10,7 @@ export default function WalletList() {
   if(!open) return <></>;
   
   async function kaikas(){
-    const kaikas = await getkaikas();
-    if(kaikas) {
-      setOpen(false);
-    }
+    await kaikasConnect();
   }
 
   function Mobileklip(){
