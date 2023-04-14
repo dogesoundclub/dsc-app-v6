@@ -21,10 +21,6 @@ export default function WalletList() {
   function Metamask(){
     getMetamask();
   }
-
-  useEffect(() => {
-  
-  }, []);
   
   return (
     <div

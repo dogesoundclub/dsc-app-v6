@@ -43,7 +43,7 @@ export default function Wallet() {
             <button style={{ color: "#000000" }} onClick={ klip }>Connect to Klip</button>
           </section>
           <section className="field-row" style={{ justifyContent: "center" }}>
-            <button style={{ color: "#000000" }} onClick={ Close }>Don't Connect</button>
+            <button style={{ color: "#000000" }} onClick={ Close }>Don&apos;t Connect</button>
           </section>
         </div>
       </div>
