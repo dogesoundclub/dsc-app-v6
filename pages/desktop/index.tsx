@@ -17,7 +17,7 @@ export default function AboutPage() {
               padding: "20px",
             }}
           >
-            <span style={{ color: "#36B167", fontSize: "2em" }}>About</span>
+            <span style={{ color: "#36B167", fontSize: "2em"}}>About</span>
             <div>
               <a href="https://github.com/dogesoundclub" target="_blank">
                 <img src="/icon/git.png" style={{ width: "32px" }} />

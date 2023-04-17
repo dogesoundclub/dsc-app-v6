@@ -4,16 +4,16 @@ export default function SidebarLeft() {
     return (
         <div style={{ width: "15%", background: "#C1C1C1", color: "#656565" }}>
             <div style={{ padding: "4%" }}>
-            <h2>Popular Dogesound</h2>
+            <h4>Popular Dogesound</h4>
             <div style={{ padding: "10px 0px 0px 0px" }}>
-                <a href="https://opensea.io/assets/klaytn/0x252a59642c494db5d3645bca65a36e70e50bf85e/0" target="_blank">1. 비트코인은 인류 최대의 뻘짓입니...</a><br/>
-                <a href="https://opensea.io/assets/klaytn/0x252a59642c494db5d3645bca65a36e70e50bf85e/1" target="_blank">2. 내가 개소리대회 당선되면 도사클...</a><br/>
-                <a href="https://opensea.io/assets/klaytn/0x252a59642c494db5d3645bca65a36e70e50bf85e/2" target="_blank">3. 본인 월급이 메이트 하나값 안되는...</a><br/>
-                <a href="https://opensea.io/assets/klaytn/0x252a59642c494db5d3645bca65a36e70e50bf85e/3" target="_blank">4. 대치동 APT 사는 것보다 도사클...</a><br/>
-                <a href="https://opensea.io/assets/klaytn/0x252a59642c494db5d3645bca65a36e70e50bf85e/4" target="_blank">5. 메이트 안사</a><br/>
+                <a href="https://opensea.io/assets/klaytn/0x252a59642c494db5d3645bca65a36e70e50bf85e/0" target="_blank" style={{ color: "#54A5F0", fontSize: "15px" }}>1. 비트코인은 인류 최대의 뻘짓입니...</a><br/>
+                <a href="https://opensea.io/assets/klaytn/0x252a59642c494db5d3645bca65a36e70e50bf85e/1" target="_blank" style={{ color: "#54A5F0", fontSize: "15px" }}>2. 내가 개소리대회 당선되면 도사클...</a><br/>
+                <a href="https://opensea.io/assets/klaytn/0x252a59642c494db5d3645bca65a36e70e50bf85e/2" target="_blank" style={{ color: "#54A5F0", fontSize: "15px" }}>3. 본인 월급이 메이트 하나값 안되는...</a><br/>
+                <a href="https://opensea.io/assets/klaytn/0x252a59642c494db5d3645bca65a36e70e50bf85e/3" target="_blank" style={{ color: "#54A5F0", fontSize: "15px" }}>4. 대치동 APT 사는 것보다 도사클...</a><br/>
+                <a href="https://opensea.io/assets/klaytn/0x252a59642c494db5d3645bca65a36e70e50bf85e/4" target="_blank" style={{ color: "#54A5F0", fontSize: "15px" }}>5. 메이트 안사</a><br/>
             </div>
             <div style={{ textAlign: "end" }}>
-            <a href="https://opensea.io/collection/dsc-dogesound-winners" target="_blank">&gt;&gt;&gt;see more</a>
+            <a href="https://opensea.io/collection/dsc-dogesound-winners" target="_blank" style={{ color: "#54A5F0", fontSize: "15px" }}>&gt;&gt;&gt; see more</a>
             </div>
             <div style={{ padding: "10px 0px 0px 0px" }}>
                 <img src="/fbi_warning.png" style={{width: "100%"}}/>

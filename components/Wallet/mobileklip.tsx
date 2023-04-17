@@ -12,7 +12,3 @@ export async function connect(): Promise<any> {
         }
     }, 1000);
 }
-
-export async function getMobileKlip() {
-    const address = (await connect())?.klaytn_address;
-}

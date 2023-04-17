@@ -7,6 +7,7 @@ export async function kaikasConnect() {
       } else {
         sessionStorage.setItem('klaytn_kaikas_address', klaytn[0]);
         location.reload();
+        return true;
       }
     } catch (e) {
       

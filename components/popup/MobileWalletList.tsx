@@ -1,26 +1,16 @@
 import "xp.css/dist/XP.css";
-import { useState, useEffect } from "react";
 import { kaikasConnect } from "../Wallet/kaikas";
-import { getMobileKlip } from "../Wallet/mobileklip";
-import { getMetamask } from "../Wallet/metamask";
+import { connect } from "../Wallet/mobileklip";
+import { useStateStore } from "@/components/utils/StateStore";
 
 export default function WalletList() {
-  const [open, setOpen] = useState(true);
-  const handleClose = () => setOpen(false);
-  if(!open) return <></>;
+  const StateStore = useStateStore();
   
-  async function kaikas(){
-    await kaikasConnect();
-  }
+  const Close = () => StateStore.setView(true);
+  const kaikas = async () => { await kaikasConnect(); }
+  const klip = () =>  { connect(); }
 
-  function Mobileklip(){
-    // const data = getKlip();
-    getMobileKlip();
-  }
-  
-  function Metamask(){
-    getMetamask();
-  }
+  if(StateStore.view) return <></>;
   
   return (
     <div
@@ -41,29 +31,18 @@ export default function WalletList() {
         <div className="title-bar" style={{ padding: "12px 3px 12px 3px" }}>
           <div className="title-bar-text">Wallet Connect</div>
           <div className="title-bar-controls">
-            <button aria-label="Close" onClick={handleClose}></button>
+            <button aria-label="Close" onClick={ Close }></button>
           </div>
         </div>
         <div className="window-body">
             <section className="field-row" style={{ justifyContent: "center" }}>
-                <button style={{ color: "#000000" }} onClick={kaikas}>
-                Connect to Kaikas
-                </button>
+                <button style={{ color: "#000000" }} onClick={ kaikas }>Connect to Kaikas</button>
             </section>
             <section className="field-row" style={{ justifyContent: "center" }}>
-                <button style={{ color: "#000000" }} onClick={Mobileklip}>
-                Connect to Klip
-                </button>
+                <button style={{ color: "#000000" }} onClick={ klip }>Connect to Klip</button>
             </section>
-          {/* <section className="field-row" style={{ justifyContent: "center" }}>
-            <button style={{ color: "#000000" }} onClick={Metamask}>
-                Connect to Metamask
-            </button>
-          </section> */}
             <section className="field-row" style={{ justifyContent: "center" }}>
-                <button style={{ color: "#000000" }} onClick={handleClose}>
-                연결하지 않고 닫기
-                </button>
+                <button style={{ color: "#000000" }} onClick={ Close }>Don&apos;t Connect</button>
             </section>
         </div>
       </div>

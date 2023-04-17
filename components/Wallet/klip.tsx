@@ -13,7 +13,6 @@ export default function Klip() {
             await klipSDK.request(res, async () => {
               const qr = await QRCode.toDataURL(`https://klipwallet.com/?target=/a2a?request_key=${res.request_key}`);
               setData(qr);
-              console.log("qr "+qr);
               return new Promise((resolve) => {
                   const interval = setInterval(async () => {
                       const result = await klipSDK.getResult(res.request_key);

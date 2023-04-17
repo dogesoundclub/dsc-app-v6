@@ -32,10 +32,10 @@ export default function SidebarRight() {
             <div>
             { klaytnAddress ? <>{ address } <a onClick={ sessionRemove }>Logout</a></> : <a onClick={ WalletPopup } target="_blank"><img src="/login.png" style={{ width: "100%" }}/></a> }
             </div>
-            <div style={{padding: "10px"}}>
+            <div style={{ padding: "10px" }}>
                 <a href="https://discord.gg/dogesoundclub" target="_blank"><img src="/banner.gif" style={{ width: "100%" }}/></a>
             </div>
-            <div style={{padding: "10px"}}>
+            <div style={{ padding: "10px" }}>
                 <a href="https://opensea.io/collection/portal-engine" target="_blank"><img src="/engine.gif" style={{ width: "100%" }}/></a>
             </div>
         </div>

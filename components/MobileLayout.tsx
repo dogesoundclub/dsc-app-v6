@@ -1,4 +1,5 @@
 import MobileNav from "./mobile/MobileNav";
+import WidgetBotCrate from "@/components/widget/discord";
 
 type LayoutProps = {
   user?: any
@@ -11,6 +12,7 @@ export default function MobileLayout({ children }: LayoutProps){
     <>
       <MobileNav />
       {children}
+      <WidgetBotCrate server="872113947166249041" channel="1056835060113866752" />
     </>
   );
 }
