@@ -39,7 +39,7 @@ export default function DesktopNav() {
       <nav className={styles.nav} style={{ position: "relative", zIndex: "2" }}>
           <Link href="/about"><img src="./dogesoundclub.png" style={{ height: "100px" }}/></Link>
           <audio ref={audioRef}>
-            <source src="./Caro.mp3" type="audio/mpeg" />
+            <source src="./lil9ap_beam.mp3" type="audio/mpeg" />
           </audio>
           <div>
             {isPlaying ? (
