@@ -15,7 +15,7 @@ const navigation = [
   { name: "gallery", href: "/ready" },
   { name: "board", href: "/ready" },
   { name: "activities", href: "/activities" },
-  { name: "FAQ", href: "/ready" }
+  { name: "FAQ", href: "/faq" }
 ];
 
 export default function MobileNav() {

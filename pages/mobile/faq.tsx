@@ -53,13 +53,6 @@ export default function Faq() {
             <div style={{margin: "10px", display: "flex", alignItems: "flex-start"}}>
                 <img src="/faq/6.png" style={{width: "70px", marginRight: "5px"}}/>
                 <div style={{display: "flex", flexDirection: "column"}}>
-                    <div style={{fontSize: "22px", color: "#000000"}}>What is CloneCraft?</div>
-                    <div style={{fontSize: "13px", color: "#777777"}}>CloneCraft is the first SNG P2E game in South Korea, created in collaboration with a NFT project, ‘Clones Never Die’.</div>
-                </div>
-            </div>
-            <div style={{margin: "10px", display: "flex", alignItems: "flex-start"}}>
-                <img src="/faq/7.png" style={{width: "70px", marginRight: "5px"}}/>
-                <div style={{display: "flex", flexDirection: "column"}}>
                     <div style={{fontSize: "22px", color: "#000000"}}>What is AYIAS?</div>
                     <div style={{fontSize: "13px", color: "#777777"}}>AYIAS is our own metaverse platform. And it’s the final destination of the DogeSoundClub’s ecosystem.</div>
                 </div>

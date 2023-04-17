@@ -25,13 +25,13 @@ export default function Dogesound() {
         <>
             <div className={styles.animated}>
                 <div className={styles.track}>
-                    <div className={styles.content}>{isData}</div>
+                    <div className={styles.content} style={{ fontSize: "17px" }}>{isData}</div>
                 </div>
             </div>
             <div style={{ display: "flex", justifyContent: "space-around" }}>
                 <div style={{ width: "50%" }}><img src="/banner1.png" style={{ width: "100%" }}/></div>
-                <div className={styles.mix} style={{ width: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff" }}>
-                    <a href="https://dexata.kr/#/?tokenA=0xdd483a970a7a7fef2b223c3510fac852799a88bf" target="_blank">MIX: <span style={{ fontSize: "12px" }}>&#8361; </span>{Math.ceil(Number(isMix)*1000)/1000}</a>
+                <div className={styles.mix} style={{ width: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: "url('/banner2.png')", backgroundSize: "contain" }}>
+                    <a href="https://dexata.kr/#/?tokenA=0xdd483a970a7a7fef2b223c3510fac852799a88bf" target="_blank" style={{ color: "#ffffff", fontSize: "18px" }}>MIX: &#8361; {Math.ceil(Number(isMix)*1000)/1000}</a>
                 </div>
             </div>
         </>

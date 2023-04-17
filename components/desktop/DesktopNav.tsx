@@ -17,7 +17,7 @@ const navigation = [
   { name: "board", href: "/ready" },
   { name: "activities", href: "/activities" },
   { name: "MIX", href: "/ready" },
-  { name: "FAQ", href: "/ready" }
+  { name: "FAQ", href: "/faq" }
 ];
 
 export default function DesktopNav() {
