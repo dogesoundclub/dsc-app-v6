@@ -29,8 +29,8 @@ export default function SidebarRight() {
     return (
         <div style={{ width: "15%", textAlign: "center", background: "#C1C1C1", zIndex: "2" }}>
             <Wallet></Wallet>
-            <div>
-            { klaytnAddress ? <>{ address } <a onClick={ sessionRemove }>Logout</a></> : <a onClick={ WalletPopup } target="_blank"><img src="/login.png" style={{ width: "100%" }}/></a> }
+            <div style={{ padding: "10px", textAlign: "left" }}>
+            { klaytnAddress ? <><strong>Your Wallet</strong><br/>{ address.slice(0, 5) + "....."+ address.slice(-5) } <a onClick={ sessionRemove } style={{ textAlign: "right" }}>Logout</a></> : <a onClick={ WalletPopup } target="_blank"><img src="/login.png" style={{ width: "100%" }}/></a> }
             </div>
             <div style={{ padding: "10px" }}>
                 <a href="https://discord.gg/dogesoundclub" target="_blank"><img src="/banner.gif" style={{ width: "100%" }}/></a>

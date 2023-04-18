@@ -23,7 +23,7 @@ export default function SidebarLeft() {
                 Creative Contents Attribution-Share Alike 4.0 International License
             </div>
             <div style={{ fontSize: "7px", textAlign: "center" }}>
-                <Link href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="./CC_BY-SA_icon.png" style={{ width: "100px" }}/></Link>
+                <Link href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="/CC_BY-SA_icon.png" style={{ width: "100px" }}/></Link>
             </div>
             <div style={{ fontSize: "7px", textAlign: "center" }}>
                 DSC LABEL inc.

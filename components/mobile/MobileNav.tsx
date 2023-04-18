@@ -20,8 +20,6 @@ const navigation = [
 
 export default function MobileNav() {
 
-  let [nav, setNav] = useState(false);
-
   return (
       <nav className={styles.nav}>
         <ul className={styles.ul}>
@@ -32,13 +30,3 @@ export default function MobileNav() {
       </nav>
   );
 };
-
-// {navigation.map((item) => {
-//   if(item.name == "gallery") {
-//     return <>
-//             <li onClick={ ()=> {setNav(true)}} key={item.name} className={styles.li}>{item.name}</li>
-//             {nav === true ? <li onClick={()=>{setNav(false)}}>asd</li> : null}
-//           </>
-//   } else {
-//     return <li key={item.name} className={styles.li}><Link href={item.href} className={styles.link}>{item.name}</Link></li>
-//   }

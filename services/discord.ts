@@ -96,7 +96,6 @@ export async function getKlaytnMsg(code: string) {
       console.log(err);
       return false;
     }
-
   }
 }
 

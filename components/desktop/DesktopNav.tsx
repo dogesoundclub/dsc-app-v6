@@ -37,15 +37,15 @@ export default function DesktopNav() {
 
   return (
       <nav className={styles.nav} style={{ position: "relative", zIndex: "2" }}>
-          <Link href="/about"><img src="./dogesoundclub.png" style={{ height: "100px" }}/></Link>
+          <Link href="/about"><img src="/dogesoundclub.png" style={{ height: "100px" }}/></Link>
           <audio ref={audioRef}>
-            <source src="./lil9ap_beam.mp3" type="audio/mpeg" />
+            <source src="/lil9ap_beam.mp3" type="audio/mpeg" />
           </audio>
           <div>
             {isPlaying ? (
-              <a onClick={handleStop}><img src="./music.png"/></a>
+              <a onClick={handleStop}><img src="/music.png"/></a>
             ) : (
-              <a onClick={handlePlay}><img src="./music.png"/></a>
+              <a onClick={handlePlay}><img src="/music.png"/></a>
             )}
           </div>
         <ul className={styles.ul}>
