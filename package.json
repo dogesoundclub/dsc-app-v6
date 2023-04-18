@@ -13,8 +13,6 @@
     "@emotion/styled": "^11.10.6",
     "@hashgraph/sdk": "^2.23.0",
     "@klaytn/kaikas-web3-provider": "^1.0.3",
-    "@mui/icons-material": "^5.11.11",
-    "@mui/material": "^5.11.14",
     "@types/node": "18.15.3",
     "@types/qrcode": "^1.5.0",
     "@types/react": "18.0.28",
