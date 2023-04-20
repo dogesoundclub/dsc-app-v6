@@ -28,6 +28,7 @@
     "hashconnect": "^0.2.4",
     "klip-sdk": "^2.2.1",
     "next": "^12.2.5",
+    "next-seo": "^6.0.0",
     "next-transpile-modules": "^10.0.0",
     "openai": "^3.2.1",
     "qrcode": "^1.5.1",
