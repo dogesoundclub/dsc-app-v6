@@ -6,21 +6,21 @@ export default function Banner() {
 
     async function getDogesound(){
         try {
-            const res = await fetch("https://api.dogesound.club/dogesoundwinner")
-            const data = await res.json()
-            setDogesound(data.dogesound)
+            const res = await fetch("https://api.dogesound.club/dogesoundwinner");
+            const data = await res.json();
+            setDogesound(data.dogesound);
         } catch {
-            setDogesound("개소리우승작 보러가기")
+            setDogesound("개소리우승작 보러가기");
         }
     }
 
     async function getMix(){
         try {
-            const res = await fetch("https://api.dogesound.club/mix/price")
-            const data = await res.json()
-            setMix(data)
+            const res = await fetch("https://api.dogesound.club/mix/price");
+            const data = await res.json();
+            setMix(data);
         } catch {
-            setMix("믹스가격 보러가기")
+            setMix("믹스가격 보러가기");
         }
     }
 

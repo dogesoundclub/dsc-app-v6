@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import Navbar from "@/components/mobile/MobileNav";
 import Dogesound from "@/components/mobile/Dogesound";
 import Footer from "@/components/mobile/Footer";

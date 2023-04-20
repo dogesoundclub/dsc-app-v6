@@ -11,8 +11,8 @@ export default function MobileLayout({ children }: LayoutProps){
     return (
         <main style={{ background: "#D9D9D9" }}>
             <Logo />
-            <Nav />
             <Banner />
+            <Nav />
             {children}
             <WidgetBotCrate server="872113947166249041" channel="1056835060113866752" />
         </main>
