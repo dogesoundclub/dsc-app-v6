@@ -1,6 +1,6 @@
 import { useCallback, useState, useRef } from "react";
 import { walletStore } from "@/stores/wallet.store";
-import { kaikasConnect } from "@/components/wallet/kaikas";
+import { kaikasConnect } from "../wallet/kaikas";
 import QRCode from "qrcode";
 
 export default function WalletPage() {
