@@ -1,10 +1,10 @@
-import DesktopGallery from "./desktop/mates";
-import MobileGallery from "./mobile/mates";
-import type { Props } from "next/app";
-import { device } from '../util/device';
+import type { Props } from 'next/app';
+import { device } from '@/utils/device'
+import DesktopGallery from '@/pages/desktop/gallery';
+import MobileGallery from '@/pages/mobile/gallery'
 
-export default function GalleryPage( { isMobile }: Props) {
-  return isMobile ? <MobileGallery /> : <DesktopGallery />;
-};
+export default function Gallery({ isMobile }: Props) {
+    return isMobile ? <MobileGallery /> : <DesktopGallery />;
+}
 
 export const getServerSideProps = device;

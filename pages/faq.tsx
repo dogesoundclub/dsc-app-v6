@@ -1,10 +1,10 @@
-import DesktopFaq from "./desktop/faq";
-import MobileFaq from "./mobile/faq";
-import type { Props } from "next/app";
-import { device } from '../util/device';
+import type { Props } from 'next/app';
+import { device } from '@/utils/device'
+import DesktopFaq from '@/pages/desktop/faq';
+import MobileFaq from '@/pages/mobile/faq'
 
-export default function Index({ isMobile }: Props) {
-  return isMobile ? <MobileFaq /> : <DesktopFaq />;
+export default function Faq({ isMobile }: Props) {
+    return isMobile ? <MobileFaq /> : <DesktopFaq />;
 }
 
 export const getServerSideProps = device;

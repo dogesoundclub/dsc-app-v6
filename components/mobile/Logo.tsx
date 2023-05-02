@@ -1,5 +1,9 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export default function Logo() {
-  return <Link href="/"><img src="/mobile/layout/logo.png" style={{ width: "100%" }}/></Link>
-};
+    return (
+        <div style={{ display: "flex", justifyContent: "space-around" }}>
+            <Link href="/"><img src="/mobile/logo.webp" alt="" style={{ width: "100%" }} /></Link>
+        </div>
+    )
+}

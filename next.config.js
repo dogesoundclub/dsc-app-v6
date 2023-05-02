@@ -1,12 +1,29 @@
 /** @type {import('next').NextConfig} */
+const withPlugins = require('next-compose-plugins');
+const withPWA = require('next-pwa');
 const withTM = require("next-transpile-modules")(["hashconnect"]);
+
 const nextConfig = {
-  //reactStrictMode: true,// useEffect 2번 실행
-  reactStrictMode: false,// useEffect 1번 실행
+  // reactStrictMode: true,
+  reactStrictMode: false,
   webpack5: true,
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
     return config;
   },
 };
-module.exports = withTM(nextConfig);
+
+
+module.exports = withPlugins(
+  [
+    [
+      withPWA,
+      {
+        pwa: {
+          dest: 'public',
+        },
+      },
+    ],
+  ],
+  withTM(nextConfig)
+)

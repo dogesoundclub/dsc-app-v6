@@ -12,6 +12,7 @@ declare global {
 
 export async function getKlaytnMsg(code: string) {
   const klaytn_kaikas_address = sessionStorage.getItem('klaytn_kaikas_address');
+  const klaytn_klip_address = sessionStorage.getItem('klaytn_klip_address');
   if (klaytn_kaikas_address) {
     try {
       const klaytn = await window.klaytn.enable();
@@ -58,7 +59,6 @@ export async function getKlaytnMsg(code: string) {
       return false;
     }
   } else {
-    //클립지갑
     try {
       const get = await axios.get(
         `https://api.dogesound.club/discord/token?code=${code}&redirect_uri=${redirectURI}?network=klaytn%26`,
@@ -74,9 +74,9 @@ export async function getKlaytnMsg(code: string) {
       const res = await axios.post(
         "https://api.dogesound.club/checkholder",
         JSON.stringify({
-          klipAddress: sessionStorage.getItem('klaytn_klip_address'),
+          klipAddress: klaytn_klip_address,
           code,
-          address: sessionStorage.getItem('klaytn_klip_address'),
+          address: klaytn_klip_address,
         }),
         {
           headers: {
@@ -85,16 +85,16 @@ export async function getKlaytnMsg(code: string) {
           },
         }
       );
-      const { data } = res;
-      console.log(data);
-      let verified = false;
-      for (let key in data) {
-        if (data[key]) verified = true;
-      }
-      return verified;
+        const { data } = res;
+        console.log(data);
+        let verified = false;
+        for (let key in data) {
+          if (data[key]) verified = true;
+        }
+        return verified;
     } catch (err) {
-      console.log(err);
-      return false;
+        console.log(err);
+        return false;
     }
   }
 }

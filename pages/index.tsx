@@ -1,11 +1,10 @@
-import DesktopIndex from "./desktop/";
-import MobileIndex from "./mobile";
-//import DesktopHome from "./desktop";
-import type { Props } from "next/app";
-import { device } from '../util/device';
+import type { Props } from 'next/app';
+import { device } from '@/utils/device'
+import Desktop from '@/pages/desktop/index';
+import Mobile from '@/pages/mobile/index'
 
 export default function Index({ isMobile }: Props) {
-  return isMobile ? <MobileIndex /> : <DesktopIndex />;
+    return isMobile ? <Mobile /> : <Desktop />;
 }
 
 export const getServerSideProps = device;

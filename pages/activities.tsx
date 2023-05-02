@@ -1,10 +1,10 @@
-import DesktopReady from "./desktop/activities";
-import MobileReady from "./mobile/activities";
-import type { Props } from "next/app";
-import { device } from '../util/device';
+import type { Props } from 'next/app';
+import { device } from '@/utils/device'
+import DesktopActivities from '@/pages/desktop/activities';
+import MobileActivities from '@/pages/mobile/activities'
 
-export default function ActivitiesPage({ isMobile }: Props) {
-  return isMobile ? <MobileReady /> : <DesktopReady/>;
-};
+export default function Activities({ isMobile }: Props) {
+    return isMobile ? <MobileActivities /> : <DesktopActivities />;
+}
 
 export const getServerSideProps = device;
