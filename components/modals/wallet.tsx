@@ -1,6 +1,6 @@
 import { useCallback, useState, useRef } from "react";
 import { walletStore } from "@/stores/wallet.store";
-import { kaikasConnect } from "../wallet/kaikas";
+// import { kaikasConnect } from "@/components/wallet/kaikas";
 import QRCode from "qrcode";
 
 export default function WalletPage() {
@@ -12,6 +12,24 @@ export default function WalletPage() {
     const WalletClose = () => { WalletStore.setView(false); }
     const kaikas = async () => { await kaikasConnect(); }
     const klipClose = () => { setPopupKlip(false); }
+
+    async function kaikasConnect() {
+        if(window.klaytn){
+            try {
+                const klaytn = await window.klaytn.enable();
+                if(window.klaytn.networkVersion !== 8217) {
+                    alert("Please change Kaikas network to Cypress");
+                } else {
+                    sessionStorage.setItem("klaytn_kaikas_address", klaytn[0]);
+                    location.reload();
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        } else {      
+                alert("Please install Kaikas wallet"); window.open("https://chrome.google.com/webstore/detail/kaikas/jblndlipeogpafnldhgmapagcccfchpi");
+        }
+    }
 
     const klip = useCallback(() => {
       const klipSDK = require("klip-sdk");
