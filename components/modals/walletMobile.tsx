@@ -1,11 +1,11 @@
-import { useCallback, useState, useRef } from "react";
+import { useCallback } from "react";
 import { walletStore } from "@/stores/wallet.store";
 import { kaikasConnect } from "@/components/wallet/kaikas";
 
 export default function WalletMobilePage() {
     const WalletStore = walletStore();
     const WalletClose = () => { WalletStore.setView(false); }
-    const kaikas = async () => { await kaikasConnect(true); }
+    const kaikas = async () => { await kaikasConnect(); }
 
     const klip = useCallback(() => {
         const klipSDK = require("klip-sdk");

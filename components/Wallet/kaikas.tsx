@@ -1,4 +1,4 @@
-export async function kaikasConnect(isMobile:boolean) {
+export async function kaikasConnect() {
     if(window.klaytn){
         try {
             const klaytn = await window.klaytn.enable();
@@ -12,10 +12,6 @@ export async function kaikasConnect(isMobile:boolean) {
             console.log(error);
         }
     } else {      
-        if(isMobile) { 
-            //구글 플레이 스토어 링크
-        } else {
             alert("Please install Kaikas wallet"); window.open("https://chrome.google.com/webstore/detail/kaikas/jblndlipeogpafnldhgmapagcccfchpi");
-        }
     }
 }
