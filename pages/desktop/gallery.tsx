@@ -90,7 +90,7 @@ export default function Gallery() {
                     {boxList.map((box) => (
                         <>
                           <li key={box} className="box" style={{ flexDirection: "column", width: "16.6666%" }}>
-                            <img src={"https://storage.googleapis.com/dsc-mate/336/dscMate-"+box+".png"} alt="" style={{ width: "100px", borderRadius: "10px" }}  ref={setObserverRef}/>
+                            <img src={"https://api.dogesound.club/mate/images/dscMate-"+box+".png"} alt="" style={{ width: "100px", borderRadius: "10px" }}  ref={setObserverRef}/>
                             <span style={{ fontSize: "15px" }}>DSC Mate #{box}</span>
                           </li>
                         </>
